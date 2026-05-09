@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: "docs"
+  
 
 website:
   title: "Home"
@@ -32,11 +33,12 @@ website:
       href: https://github.com/Crystal-analytics
     - icon: linkedin
       href: https://www.linkedin.com/in/adeyeye-seyi-3124a213b/
-
+execute:
+    freeze: auto
       
 format:
   html:
     mainfont: "sarif"
     fontsize: 20px
-    theme: [cosmos, styles.scss]
+    theme: [cyborg, styles.scss]
 
