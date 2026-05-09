@@ -1,0 +1,26 @@
+---
+title: "Adeyeye Seyi Joseph"
+subtitle: "Data Analyst | Writer | Administrator"
+# `profile.jpg` photo by Jan Tinneberg on https://unsplash.com
+image: ade.jpg
+about: # https://quarto.org/docs/websites/website-about.html
+  template: trestles
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/Crystal-analytics
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/adeyeye-seyi-3124a213b/
+---
+
+Adeyeye Seyi Joseph is a data analyst, public administrator, lover of beautiful visualizations and a researcher. I love issues-based politics, value-driven statesmanship and people-centric leadership.
+
+## Education
+
+University of Ilorin, Ilorin | Kwara State | Nigeria
+
+## Experience
+
+Policy Innovation Centre(PIC) \| Data Analyst \| Dec 2025 - Feb 2026

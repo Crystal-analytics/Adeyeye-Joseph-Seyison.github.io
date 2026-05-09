@@ -1,0 +1,41 @@
+project:
+  type: website
+
+website:
+  title: "Home"
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  page-footer: "Made with ❤️ and Quarto"
+  navbar:
+    title: Adeyeye Seyi Joseph
+    left:
+      - text: Home
+        href: index.qmd
+    right: 
+      - href: talks.qmd
+        text: Talks
+        icon: megaphone
+      - href: blog/index.qmd
+        text: Projects
+      - href: BI-projects.qmd
+        text: Power-BI
+      - href: Excel-projects.qmd
+        text: Excel-works
+      - href: Mini-Analysis.qmd
+        text: Jupyter-Notebooks
+      - href: Python-Apps.qmd
+        text: Python-apps
+      - href: Research.qmd
+        text: Research
+    tools: 
+    - icon: github
+      href: https://github.com/Crystal-analytics
+    - icon: linkedin
+      href: https://www.linkedin.com/in/adeyeye-seyi-3124a213b/
+
+      
+format:
+  html:
+    mainfont: "sarif"
+    fontsize: 20px
+    theme: [cosmos, styles.scss]
+
