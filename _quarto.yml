@@ -40,5 +40,5 @@ format:
   html:
     mainfont: "sarif"
     fontsize: 20px
-    theme: [cyborg, styles.scss]
+    theme: [cosmos, styles.scss]
 
