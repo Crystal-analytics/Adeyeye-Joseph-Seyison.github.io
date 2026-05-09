@@ -19,5 +19,23 @@
   },
   "blog/index.qmd": {
     "index.html": "d049fca5"
+  },
+  "BI-projects.qmd": {
+    "BI-projects.html": "9571fa46"
+  },
+  "Excel-projects.qmd": {
+    "Excel-projects.html": "118c407b"
+  },
+  "Mini-Analysis.qmd": {
+    "Mini-Analysis.html": "fad1a257"
+  },
+  "Python-Apps.qmd": {
+    "Python-Apps.html": "273e457f"
+  },
+  "Research.qmd": {
+    "Research.html": "4dc38bec"
+  },
+  "SQL-projects.qmd": {
+    "SQL-projects.html": "693222c3"
   }
 }
