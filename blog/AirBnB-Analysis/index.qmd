@@ -1,0 +1,310 @@
+---
+title: "AirBnB Listing Analysis"
+format: 
+   html:
+    code-fold: true
+    code-tools: true
+    code-summary: "show the code"
+description: "An Analysis of Airbnb data for over 250k listings in 10 major cities, including information about hosts, pricing, location, and room type, along with over 5 million historical reviews (targeting city of Paris only)"
+author: "Adeyeye Seyi Joseph"
+date: "04/06/2026"
+image: "air.jpg"
+categories:
+  - Business
+  - Rentals
+  - Accommodation
+---
+
+
+
+```{python}
+# fisrtly we import the needed modules/libraries:
+
+import pandas as pd 
+import numpy as np 
+from pandas import read_csv
+import seaborn as sns
+import matplotlib.pyplot as plt
+import datetime as dt
+import plotly.express as px
+```
+
+
+```{python}
+# Read in the data set:
+
+listing = pd.read_csv("C:\\Users\\hp\\Desktop\\python\\projects\\Listings.csv", 
+                low_memory = False, 
+                encoding = "ISO-8859-1")
+
+listing.head()
+```
+
+
+```{python}
+# Taking an overview of data 
+
+listing.info()
+```
+
+
+```{python}
+#   retaining our original dataframe, by creating a copy:
+df = listing.copy()
+df.head()
+```
+
+
+```{python}
+# preview all col names
+
+print(df.columns.tolist())
+```
+
+
+```{python}
+# format date col correctly:
+df["host_since"] = pd.to_datetime(df["host_since"])
+df.info() 
+```
+
+
+
+```{python}
+# filtering for only Paris location
+
+paris_listing = (
+    df
+    .query(" city == 'Paris' ")
+    .loc[:, ["host_since", "city", "neighbourhood", "accommodates", "price"]] 
+)   
+
+paris_listing.info()
+```
+
+
+```{python}
+# checking for NAs values :
+
+paris_listing.isna().sum()
+```
+
+
+
+```{python}
+# Get an overview of our basic stats:
+paris_listing.describe()
+```
+
+
+```{python}
+# inspecting cols where accommodates =0 as well as price
+paris_listing.query(" accommodates == 0 and price == 0 ").count()
+```
+
+
+```{python}
+paris_listing_neighbourhood = (
+    paris_listing
+    .groupby("neighbourhood")
+    .agg(avg_price=("price", "mean"))
+    .sort_values(by="avg_price", ascending=False)
+    .reset_index()
+)
+
+paris_listing_neighbourhood.head() 
+```
+
+
+
+```{python}
+# filtering for accommodation in the most expensive parts of Paris:
+
+paris_listing_accommodates = (
+   paris_listing
+   .query(" neighbourhood == 'Elysee' ")
+   .groupby(["accommodates"], as_index=True)
+   .agg({"price": "mean"})
+   .sort_values(by="price")
+)
+ 
+paris_listing_accommodates.head()
+
+```
+
+
+```{python}
+# creating a table for time series object
+import warnings 
+warnings.filterwarnings("ignore")
+
+paris_listing_over_time = (
+        paris_listing
+        .set_index("host_since")
+        .resample("YE")
+        .agg({ "price": "mean", "neighbourhood":"count"})
+    
+)
+
+
+paris_listing_over_time
+```
+
+
+
+```{python}
+# visualizing via a barplot:
+sns.barplot(paris_listing_neighbourhood, 
+            x = "avg_price",
+            y= "neighbourhood")
+
+plt.show()
+```
+
+
+
+```{python}
+# visualizing via the plotly api:
+
+fig = px.bar(
+    paris_listing_neighbourhood,
+    x="avg_price",
+    y="neighbourhood",
+    orientation="h",
+    title="Average Price Listing by Paris Neighbourhood", 
+    labels={"avg_price": "Average Price(Euros)", 
+             "neighbourhood":"Paris Neighbourhood"}
+)
+
+
+fig.update_yaxes(
+    categoryorder='array',
+    categoryarray=paris_listing_neighbourhood['neighbourhood']
+)
+
+fig.update_yaxes(autorange="reversed")
+
+
+fig.show()
+```
+
+
+
+```{python}
+# visualizing average price of Paris listing accommodation:
+
+fig = px.bar(
+    paris_listing_accommodates,
+    orientation="v",
+    title="Average Price Listing by Paris Neighbourhood"
+)
+
+fig.update_layout(
+    xaxis_title="Accommodation Capacity",
+    yaxis_title="Price (Euros)")
+
+fig.update_layout(showlegend=False)
+
+fig.show()
+```
+
+
+
+```{python}
+# visualizing via the pandas API : the price vs accommodation capacity in Paris
+(paris_listing_accommodates.plot.barh( 
+            xlabel= "Price",
+            ylabel= "Accommodates",
+            title="Average Listing Price by Accommodation Capacity in Paris Most Expensive Neighbourhood(Elysee)",
+            legend=None)
+
+)
+
+sns.despine()
+```
+
+
+
+```{python}
+# Creating dual axis plot : firstly we need paris listing over time plot
+
+paris_listing_over_time["neighbourhood"].plot(
+    ylabel="New Host",
+    xlabel="Year",
+    title="New AirBnB Hosts in Paris Over Time"
+    
+)
+
+sns.despine()
+
+```
+
+
+```{python}
+# secondly we need paris listing over time by average price plot
+paris_listing_over_time["price"].plot(
+    ylabel="Average Price",
+    xlabel="Year",
+    title="Average Price in Paris Over Time"
+    
+)
+
+sns.despine()
+
+```
+
+
+
+```{python}
+# combining both plots together via the twinx() method from matplolib:
+fig,  ax = plt.subplots()
+
+ax.plot(paris_listing_over_time.index, 
+     paris_listing_over_time["neighbourhood"], 
+     label = "New Hosts", 
+     c ="red"
+)
+
+ax.set_ylabel("New Hosts")
+plt.legend(loc="upper right")
+
+
+ax2 = ax.twinx()
+
+ax2.plot(paris_listing_over_time.index, 
+    paris_listing_over_time["price"], 
+    label = "Average Price Over Time", 
+    c ="blue"
+)
+
+ax2.set_ylim(0)
+
+ax2.set_ylabel("Average Price Over Time")
+ax.set_title("2015 Regulations Led to Fewer Host & Higher Prices")
+plt.legend(loc="lower center")
+```
+
+
+
+
+
+
+
+
+## Summary of findings:
+
+1. 2015 Regulations  affected the number of  of AirBnB listings , this led to drop in numbers of people listing their accommodations. The result effect of this was steady rises in prices of accommodations listed. 
+
+
+
+## Recommendations:
+
+1. Over-regulations stiffles growth, causes sharp drop in numbers of people willingly to list their accommodation for AirBnB, there is need for government/appropriate authorities to review existing regulations, lessen strictness which will in turn incentivize people to list or put their accommodations for AirBnB. 
+
+
+
+## Original Datasets: 
+
+[The original AirBnB datasets can be accessed on Maven Data Playground here:](https://mavenanalytics.io/data-playground/airbnb-listings-reviews){target="_blank"}
+
+

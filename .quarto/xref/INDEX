@@ -37,5 +37,35 @@
   },
   "SQL-projects.qmd": {
     "SQL-projects.html": "693222c3"
+  },
+  "blog/third-post/Analyzing_cat_data.qmd": {
+    "Analyzing_cat_data.html": "946ea7f3"
+  },
+  "blog/first-post/AirBnb_Listing_Analysis.qmd": {
+    "AirBnb_Listing_Analysis.html": "9a6041ae"
+  },
+  "blog/second-post/Churn_analysis.qmd": {
+    "Churn_analysis.html": "145d783b"
+  },
+  "blog/AirBnB-Analysis/AirBnb_Listing_Analysis.qmd": {
+    "AirBnb_Listing_Analysis.html": "a2a536bd"
+  },
+  "blog/AirBnB-Analysis/index.qmd": {
+    "index.html": "c88bdb5b"
+  },
+  "blog/Cohorts-Analysis/Churn_analysis.qmd": {
+    "Churn_analysis.html": "6bcbd155"
+  },
+  "blog/Cohorts-Analysis/index.qmd": {
+    "index.html": "3885d782"
+  },
+  "blog/GSS-Analysis/Analyzing_cat_data.qmd": {
+    "Analyzing_cat_data.html": "674a5274"
+  },
+  "blog/GSS-Analysis/index.ipynb": {
+    "index.html": "f345475b"
+  },
+  "blog/GSS-Analysis/index.qmd": {
+    "index.html": "f2569599"
   }
 }

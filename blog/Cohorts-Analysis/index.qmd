@@ -1,0 +1,224 @@
+---
+title: "Cohorts Analysis"
+format: 
+   html:
+    code-fold: true
+    code-tools: true
+    code-summary: "show the code"
+description: "A Cohort(churn) Analysis of UCI Irvine Machine Learning Repo Data (Online Retail)"
+author: "Adeyeye Seyi Joseph"
+date: "04/06/2026"
+image: "churn.jpg"
+categories:
+  - Business
+  - cohorts
+  - Churn
+  - Attrition
+
+---
+
+
+
+
+```{python}
+
+import pandas as pd 
+import numpy as np 
+from pandas import read_csv
+import seaborn as sns
+import matplotlib.pyplot as plt 
+import datetime as dt
+
+```
+
+```{python}
+df = pd.read_excel("C:\\Users\\hp\\Desktop\\python\\Tuts_fold\\Absent\\Online Retail.xlsx")
+
+df.head(10)
+
+```
+
+
+
+```{python}
+# skim to see the basic info: 
+df.info()
+```
+
+
+```{python}
+# drop rows that contains NAs: 
+df = df.dropna(subset =["CustomerID"])
+df.info()
+```
+
+
+```{python}
+# Creating a custom function to get date field:
+
+import datetime as dt
+
+def get_month(x):
+    return dt.datetime(x.year, x.month,1)
+```
+
+
+```{python}
+# applying the custom func 
+
+df["InvoiceMonth"] = df["InvoiceDate"].apply(get_month)
+
+df.info()
+```
+
+
+
+```{python}
+# create a column index with the minimum  invoiceMonth aka, the first time customer was acquired : 
+
+df["CohortMonth"] = df.groupby("CustomerID")["InvoiceMonth"].transform("min")
+
+df.head(30)
+```
+
+
+
+```{python}
+# Create a custom func to get a Series for subtration: 
+def get_date_elements(df, column):
+    day = df[column].dt.day
+    month = df[column].dt.month
+    year = df[column].dt.year 
+    return day, month, year 
+```
+
+
+```{python}
+# Get date elements for Invoice & Cohort cols: 
+
+_, Invoice_month, Invoice_year = get_date_elements(df, "InvoiceMonth")
+_, Cohort_month, Cohort_year = get_date_elements(df, "CohortMonth")
+
+```
+
+
+```{python}
+# check and see the output of one of the Series ( simply a one-dimensional column):
+print(Invoice_month[:10])
+
+print(Cohort_month[:10])
+```
+
+
+```{python}
+# casting our CustomerID col (float) to get rid of the ".0": 
+
+df["CustomerID"] = df["CustomerID"].astype("Int64")
+
+print(df.dtypes)
+```
+
+
+```{python}
+# create a cohort index
+# one (1) may be added to our computation of (year_diff*12 + month_diff + 1) is optional /so we #can omitt it
+
+year_diff = Invoice_year - Cohort_year
+month_diff = Invoice_month - Cohort_month
+df['CohortIndex'] = year_diff*12 + month_diff
+
+```
+
+
+```{python}
+# count the customerId by grouping by cohort month & cohort 
+
+cohort_data = df.groupby(['CohortMonth', 'CohortIndex'])['CustomerID'].apply(pd.Series.nunique).reset_index()
+cohort_data
+```
+
+
+```{python}
+# create a pivot table from the cohort data: 
+
+cohort_pivot = cohort_data.pivot(
+    index = 'CohortMonth', columns = ['CohortIndex'], values = 'CustomerID'
+)
+
+cohort_pivot
+```
+
+
+```{python}
+#change index of the cohort_data to be neatly displayed: 
+
+cohort_pivot.index = cohort_pivot.index.strftime("%B %Y")
+cohort_pivot
+```
+
+
+```{python}
+# visualizing via an heatmap:
+
+plt.figure(figsize=(21,10))
+
+sns.heatmap(cohort_pivot, annot=True, cmap="Blues")
+```
+
+
+```{python}
+# Dividing our cohort pivot table to obtain cohort sizes :
+
+new_cohort_table = cohort_pivot.divide(cohort_pivot.iloc[:, 0], axis=0)
+new_cohort_table 
+```
+
+
+```{python}
+# create visual (i.e heatmap ) & format for pct values:
+
+plt.figure(figsize=(21,10))
+
+sns.heatmap(new_cohort_table, annot=True, cmap="Blues", fmt=".0%")
+```
+
+
+```{python}
+
+# create visual (i.e heatmap ) & format for pct values (with different colour grading):
+
+plt.figure(figsize=(21,10))
+
+sns.heatmap(new_cohort_table, annot=True, cmap="magma", fmt=".0%")
+```
+
+
+
+
+
+
+## Summary of findings:
+
+
+1. The largest customer attrition occurred immediately after the first purchase, indicating that many customers did not return for a second purchase.Customer retention declined progressively across successive cohort periods, demonstrating a natural reduction in repeat purchasing behavior over time.
+Earlier cohorts generally exhibited stronger long-term retention than later cohorts, suggesting possible changes in customer acquisition quality or engagement effectiveness.
+
+2. A core chunk of loyal customers remained active across multiple months, providing evidence of sustained customer value among retained users.
+
+3. The retention heatmap revealed that customer engagement was strongest during the acquisition month and weakened significantly in subsequent months.Churn rates increased with cohort age, indicating that the probability of customer inactivity grew as time elapsed from the first purchase.
+
+
+## Recommendations:
+
+1. Strengthen post-purchase engagements ( such as feedback, customer satifaction surveys etc)
+
+2. Introduce loyalty and rewards programs &  deploy targeted retention and re-activation campaigns/initiatives. 
+
+3. Personalize customer communications & continuously monitor cohort and churn metrics to measure improvements. 
+
+
+## Original Datasets: 
+
+[The original Online Retail datasets can be accessed on the UCI Machine Learning Repo here:](https://archive.ics.uci.edu/dataset/352/online+retail
+){target="_blank"}
+

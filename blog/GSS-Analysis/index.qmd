@@ -1,0 +1,410 @@
+---
+title: "General Social Survey Analysis"
+format:
+   html:
+    code-fold: true
+    code-tools: true
+    code-summary: "show the code"
+description: "An Analysis of the  General Social Survey (GSS) Data: the GSS is one of the most important monitors of American societial attitudes and behaviors over the last 50 years. It measures behaviours since 1972-current. This analysis only filtered for (1972-2014) period"
+author: "Adeyeye Seyi Joseph"
+date: "04/06/2026"
+image: "usa.jpg"
+categories:
+  - People
+  - Surveys
+  - Society
+  - USA
+  - CategoricalData
+  - Python
+---
+
+
+
+```{python}
+# firstly we import the needed modules/libraries:
+
+import pandas as pd 
+import numpy as np 
+from pandas import read_csv
+import seaborn as sns
+import matplotlib.pyplot as plt
+import datetime as dt
+import plotly.express as px
+from statsmodels.graphics.mosaicplot import mosaic
+import warnings
+warnings.filterwarnings("ignore")
+```
+
+
+```{python}
+# Read in the dataset:
+
+df = pd.read_csv("C:\\Users\\hp\\Desktop\\python\\projects\\gss_sub.csv")
+df
+```
+
+
+
+```{python}
+# Taking an overview of the dataset:
+df.info()
+```
+
+
+```{python}
+# inspecting individual cat cols :
+
+df.describe(include='object')
+```
+
+
+
+```{python}
+# inspecting single col :
+
+df["environment"].value_counts(normalize=True) * 100
+```
+
+
+```{python}
+# create a dict of columns and data type mapping
+
+dict_conversion = {k: "category" for k in df.select_dtypes(include="object").columns}
+dict_conversion 
+
+# convert using the astype method:
+
+df = df.astype(dict_conversion)
+df.info()
+```
+
+
+```{python}
+# inspecting a single cat col levels:
+df["labor_status"].cat.categories
+```
+
+
+```{python}
+
+# create a dict to collapse: 
+
+new_labour_status = {'UNEMPL, LAID OFF' : 'UNEMPLOYED',
+                    'TEMP NOT WORKING': 'UNEMPLOYED', 
+                     'WORKING FULLTIME' : 'EMPLOYED', 
+                     'WORKING PARTTIME' :  'EMPLOYED'
+                     }
+
+# Replace the values in the column and reset as a category: 
+
+df["labour_status_clean"] = (
+    df["labor_status"]
+    .astype(str)
+    .replace(new_labour_status)
+    .astype("category")
+)
+
+# preview new col : 
+
+df["labour_status_clean"].value_counts(normalize=True)
+
+```
+
+
+```{python}
+# inspecting vars or cols with same cat levels/encoding: 
+print(df.environment.cat.categories)
+
+print(df.drugs.cat.categories)
+
+print(df.law_enforcement.cat.categories)
+```
+
+
+```{python}
+# Re-ordering cat vars : 
+
+# Set the new order: 
+new_order = ['TOO LITTLE', 'TOO MUCH', 'ABOUT RIGHT','DK', 'IAP']
+
+cat_to_remove = ['DK', 'IAP']
+
+# loop through each col : 
+for col in ["environment","law_enforcement", "drugs"]:
+    # reorder and remove the categories
+    df[col + "_clean"] = df[col].cat.reorder_categories(new_order, ordered=True)
+    df[col + "_clean"] = df[col + "_clean"].cat.remove_categories(cat_to_remove)
+
+# preview of the col's categories
+df["environment_clean"].cat.categories
+```
+
+```{python}
+
+df["degree"].cat.categories.tolist()
+
+```
+
+```{python}
+# defining a dict to map old degree levels to new ones:
+
+new_degree = {'LT HIGH SCHOOL' : 'HIGH SCHOOL',
+               'BACHELOR' : 'COLLEGE/UNIVERSITY', 
+                'GRADUATE' : 'COLLEGE/UNIVERSITY',
+              'JUNIOR COLLEGE': 'COLLEGE/UNIVERSITY'
+             }
+
+
+# replace old degree categories with new ones and convert to categorical:
+
+df["degree_clean"] = df["degree"].astype(str).replace(new_degree).astype("category")
+
+
+# Remove  the 'DK' level from the new degree col:
+df["degree_clean"] = (
+    df["degree_clean"]
+    .cat.remove_categories(['DK'])
+)
+
+
+
+# Re-ordered the degree_clean levels and set as ordered: 
+
+df["degree_clean"] = pd.Categorical(
+    df["degree_clean"],
+    categories=['HIGH SCHOOL', 'COLLEGE/UNIVERSITY'],
+    ordered=True
+)
+
+# preview the new col 
+
+df["degree_clean"].value_counts(normalize=True)
+
+```
+
+
+
+```{python}
+# binning date var/col along decade lines: 
+
+df["year"] = df["year"].astype("Int64")
+
+decade_boundaries = [(1970, 1979), (1979, 1989),(1989, 1999), (1999, 2009), (2009, 2019)]
+
+decade_labels = ["1970s", "1980s", "1990s", "2000s", "2010s"]
+
+# set the bins and cut the Dataframe: 
+bins = pd.IntervalIndex.from_tuples(decade_boundaries)
+df["decade"] = pd.cut(df["year"], bins)
+
+
+# rename the newly created decade col 
+df["decade"] = df["decade"].cat.rename_categories(decade_labels)
+
+
+# preview new col 
+
+df[["year", "decade"]]
+```
+
+
+```{python}
+# visualizing categorical var: 
+
+fig = px.bar(df["labour_status_clean"].value_counts(), 
+                template = "plotly_white", 
+            labels={"labour_status_clean": "Labour Status", 
+             "value":"Count of Respondents"})
+
+
+# update the layout 
+fig.update_layout(showlegend=False)
+
+fig.show()
+```
+
+
+
+```{python}
+# visualizing categorical vars: making adjustments to our first plot
+
+fig = px.bar(df["labour_status_clean"].value_counts(ascending=True), 
+                template = "plotly_white", 
+              orientation ="h", 
+              title="Labour Status by Respondents", 
+              labels={"labour_status_clean": "Labour Status", 
+             "value":"Count of Respondents"})
+
+
+# update the layout
+fig.update_layout(showlegend=False)
+
+fig.show()
+```
+
+
+```{python}
+# showing categorical averages : 
+
+household_by_decade = df.groupby(["decade", "degree_clean"], as_index=False)["household_size"].mean().round(2)
+household_by_decade
+```
+
+
+```{python}
+# visualize the result: 
+
+fig = px.bar(household_by_decade, 
+            x="decade", 
+            y="household_size", 
+             color = "degree_clean",
+             barmode ="group",
+            template = "plotly_white", 
+            title="Average Household Size by Decade", 
+            labels={"household_size": "Household Size", 
+             "decade":"Decade"})
+
+fig.show()
+```
+
+
+```{python}
+# visualizing using a boxplot: 
+fig = px.box(df, 
+            x="age", 
+            y="labour_status_clean", 
+            title="Age Distribution by Labour Status", 
+            labels={"age": "Age", 
+             "labour_status_clean":"Labour Status"})
+
+
+fig.show()
+```
+
+
+```{python}
+# we can use a frequency table to show this relatiobship to get a overview of such relatiobship #between the two vars 
+
+pd.crosstab(df["degree_clean"], df["law_enforcement_clean"])
+```
+
+
+```{python}
+# using a mosaic plot to show result: 
+# mosaic plot enables one to show the relationship between two categorical variables: it helps #to #give a sense of proportions between cat vars
+
+mosaic(df, ["degree_clean", "law_enforcement_clean"], 
+       title="Law enforcement opinions/stance by Degree")
+
+plt.show()
+```
+
+
+
+```{python}
+# visualizing marital rates using line chart:
+
+marital_rates = df.groupby(["year"], as_index=False)["marital_status"].value_counts(normalize=True)
+marital_rates
+```
+
+
+```{python}
+# showing the marital rates by a line chart:
+
+fig = px.line(marital_rates, 
+             x="year", 
+             y="proportion",
+              template= "plotly_white",
+              color= "marital_status",
+             title="Marital Rates by Year")
+
+# update for right tick format:
+fig.update_yaxes(tickformat=".0%")
+
+fig.show()
+```
+
+
+```{python}
+# aggreation for education rates:
+
+education_rates = df.groupby(["year"], as_index=False)["degree_clean"].value_counts(normalize=True)
+education_rates.head()
+```
+
+
+```{python}
+# visualzing education rates via a line chart:
+
+fig = px.line(education_rates, 
+             x="year", 
+             y="proportion",
+              template= "plotly_white",
+              color= "degree_clean",
+             title="Education Rates by Year")
+
+# update for right tick format:
+fig.update_yaxes(tickformat=".0%")
+
+fig.show()
+```
+
+
+```{python}
+# comparing education rates along the decade lines:
+
+education_rates_2 = df.groupby(["decade"], as_index=False)["degree_clean"].value_counts(normalize=True)
+education_rates_2
+
+```
+
+
+```{python}
+# education rate along decade lines:
+
+fig = px.line(education_rates_2, 
+             x="decade", 
+             y="proportion",
+              template= "plotly_white",
+              color= "degree_clean",
+             title="Education Rates by Year")
+
+# update for right tick format:
+fig.update_yaxes(tickformat=".0%")
+
+fig.show()
+
+```
+
+
+
+
+## Summary of findings:
+
+
+1. Employed persons formed the largest chunk of our respondents with over 35,000 thousand in the General Social Survey Data. 
+
+2. The average household size of the High School leaver has consistently been bigger across years(decades) than the household size of a university graduate: the average household size of the High school leaver in the 1970s, was 3.27, while the household size of university graduate in the 1970s was 3.03. In 2010s, the average household size of High school leavers was 2.47, while that of university graduates stood at 2.3. 
+
+3. Many people with High School certs are not okay with spending /budgetary allocations for law enforcement , while those with college degrees feels the spending on law enforcement is too much. 
+
+
+4. Marital rates ( number of those who got marrried) have been declining over the decades; over 72% were married in 1972, but as at 2010, the figure stands at 44%. It leads credence to the observations that the institution of marriage is experiencing various challenges and problems affectings its stability, vibrancy and net benefits(good) to the general society. 
+
+5. Education wise : The number of of people(respondents) who have High school certs have been declining with its peak at 88% in 1970s, the number of people with university degree in 1970 was 12%. while the number of people with university degree continues to gain increase across years while the proportion of persons with High school certs has steadily plummetted.  
+
+
+## Recommendations:
+
+
+1. The Government of the United States and sub-nationals(States) should pay urgent attention to the decline in marital rates over years: for instance, South Korea/Japan have one of the world's lowest birth rates. These stats are not good for industrilised economies which seek to perpetuate their positive contribution to the civilization of the human race. Governments/local authorities should incentivize young people to get married , give birth and contribute meaningfully to the good of the country. 
+
+2. Educated persons should be encourage to give birth to more children owning to the fact that, the average university graduates is more financial capable of rearing more children than persons with only High school certs. 
+
+
+## Original Datasets: 
+
+[The original GSS datasets can be accessed on Kaggle here:](https://www.kaggle.com/datasets/norc/general-social-survey?select=gss.csv){target="_blank"}
+
+
