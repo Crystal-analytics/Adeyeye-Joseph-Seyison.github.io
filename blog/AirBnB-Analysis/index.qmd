@@ -302,7 +302,6 @@ plt.legend(loc="lower center")
 1. Over-regulations stiffles growth, causes sharp drop in numbers of people willingly to list their accommodation for AirBnB, there is need for government/appropriate authorities to review existing regulations, lessen strictness which will in turn incentivize people to list or put their accommodations for AirBnB. 
 
 
-
 ## Original Datasets: 
 
 [The original AirBnB datasets can be accessed on Maven Data Playground here:](https://mavenanalytics.io/data-playground/airbnb-listings-reviews){target="_blank"}
