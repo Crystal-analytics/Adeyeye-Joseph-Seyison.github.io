@@ -108,15 +108,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
 
-
-
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
-
 
 
 <meta property="og:title" content="Cohorts Analysis – Home">
 <meta property="og:description" content="A Cohort(churn) Analysis of UCI Irvine Machine Learning Repo Data (Online Retail)">
-<meta property="og:image" content="https://adeyeye-seyi.quarto.pub/home/blog/Cohorts-Analysis/churn.jpg">
+<meta property="og:image" content="churn.jpg">
 <meta property="og:site_name" content="Home">
 </head>
 
@@ -231,7 +228,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="349b0fc6" class="cell" data-execution_count="1">
+<p><img src="churn.jpg" width="640" height="427"></p>
+<div id="e1246261" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
@@ -242,14 +240,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="daaeb34c" class="cell" data-execution_count="2">
+<div id="61463d71" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">"C:</span><span class="ch">\\</span><span class="st">Users</span><span class="ch">\\</span><span class="st">hp</span><span class="ch">\\</span><span class="st">Desktop</span><span class="ch">\\</span><span class="st">python</span><span class="ch">\\</span><span class="st">Tuts_fold</span><span class="ch">\\</span><span class="st">Absent</span><span class="ch">\\</span><span class="st">Online Retail.xlsx"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="21">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 
 
@@ -384,7 +382,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="196217f2" class="cell" data-execution_count="3">
+<div id="336bb5cb" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># skim to see the basic info: </span></span>
@@ -408,7 +406,7 @@ dtypes: datetime64[ns](1), float64(2), int64(1), object(4)
 memory usage: 33.1+ MB</code></pre>
 </div>
 </div>
-<div id="9f839c52" class="cell" data-execution_count="4">
+<div id="23c3ade7" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># drop rows that contains NAs: </span></span>
@@ -433,7 +431,7 @@ dtypes: datetime64[ns](1), float64(2), int64(1), object(4)
 memory usage: 27.9+ MB</code></pre>
 </div>
 </div>
-<div id="d835389f" class="cell" data-execution_count="5">
+<div id="b122f88c" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a custom function to get date field:</span></span>
@@ -444,7 +442,7 @@ memory usage: 27.9+ MB</code></pre>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> dt.datetime(x.year, x.month,<span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="32dc8fab" class="cell" data-execution_count="6">
+<div id="983ce47d" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># applying the custom func </span></span>
@@ -472,7 +470,7 @@ dtypes: datetime64[ns](2), float64(2), int64(1), object(4)
 memory usage: 31.0+ MB</code></pre>
 </div>
 </div>
-<div id="2837b1f7" class="cell" data-execution_count="7">
+<div id="3da26241" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a column index with the minimum  invoiceMonth aka, the first time customer was acquired : </span></span>
@@ -481,7 +479,7 @@ memory usage: 31.0+ MB</code></pre>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">30</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="26">
+<div class="cell-output cell-output-display" data-execution_count="7">
 <div>
 
 
@@ -898,7 +896,7 @@ memory usage: 31.0+ MB</code></pre>
 </div>
 </div>
 </div>
-<div id="d3eef3b0" class="cell" data-execution_count="8">
+<div id="d461bdf8" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a custom func to get a Series for subtration: </span></span>
@@ -909,7 +907,7 @@ memory usage: 31.0+ MB</code></pre>
 <span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> day, month, year </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="57036337" class="cell" data-execution_count="9">
+<div id="e2cd1a61" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get date elements for Invoice &amp; Cohort cols: </span></span>
@@ -918,7 +916,7 @@ memory usage: 31.0+ MB</code></pre>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>_, Cohort_month, Cohort_year <span class="op">=</span> get_date_elements(df, <span class="st">"CohortMonth"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="107cac7d" class="cell" data-execution_count="10">
+<div id="7cf32db9" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check and see the output of one of the Series ( simply a one-dimensional column):</span></span>
@@ -951,7 +949,7 @@ Name: InvoiceMonth, dtype: int32
 Name: CohortMonth, dtype: int32</code></pre>
 </div>
 </div>
-<div id="2559389d" class="cell" data-execution_count="11">
+<div id="0bb8fc91" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># casting our CustomerID col (float) to get rid of the ".0": </span></span>
@@ -974,7 +972,7 @@ CohortMonth     datetime64[ns]
 dtype: object</code></pre>
 </div>
 </div>
-<div id="5becc374" class="cell" data-execution_count="12">
+<div id="f0cec955" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a cohort index</span></span>
@@ -985,7 +983,7 @@ dtype: object</code></pre>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'CohortIndex'</span>] <span class="op">=</span> year_diff<span class="op">*</span><span class="dv">12</span> <span class="op">+</span> month_diff</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="8e07fe5d" class="cell" data-execution_count="13">
+<div id="341a5117" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># count the customerId by grouping by cohort month &amp; cohort </span></span>
@@ -993,7 +991,7 @@ dtype: object</code></pre>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>cohort_data <span class="op">=</span> df.groupby([<span class="st">'CohortMonth'</span>, <span class="st">'CohortIndex'</span>])[<span class="st">'CustomerID'</span>].<span class="bu">apply</span>(pd.Series.nunique).reset_index()</span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>cohort_data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="32">
+<div class="cell-output cell-output-display" data-execution_count="13">
 <div>
 
 
@@ -1080,7 +1078,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<div id="feeee253" class="cell" data-execution_count="14">
+<div id="4dc86c52" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a pivot table from the cohort data: </span></span>
@@ -1091,7 +1089,7 @@ dtype: object</code></pre>
 <span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>cohort_pivot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="33">
+<div class="cell-output cell-output-display" data-execution_count="14">
 <div>
 
 
@@ -1345,7 +1343,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<div id="21f6c292" class="cell" data-execution_count="15">
+<div id="4ef8c700" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#change index of the cohort_data to be neatly displayed: </span></span>
@@ -1353,7 +1351,7 @@ dtype: object</code></pre>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>cohort_pivot.index <span class="op">=</span> cohort_pivot.index.strftime(<span class="st">"%B %Y"</span>)</span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>cohort_pivot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="34">
+<div class="cell-output cell-output-display" data-execution_count="15">
 <div>
 
 
@@ -1607,7 +1605,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<div id="3e87a214" class="cell" data-execution_count="16">
+<div id="f9823d6f" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing via an heatmap:</span></span>
@@ -1624,7 +1622,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<div id="030d0d4a" class="cell" data-execution_count="17">
+<div id="1aa85333" class="cell" data-execution_count="17">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dividing our cohort pivot table to obtain cohort sizes :</span></span>
@@ -1632,7 +1630,7 @@ dtype: object</code></pre>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>new_cohort_table <span class="op">=</span> cohort_pivot.divide(cohort_pivot.iloc[:, <span class="dv">0</span>], axis<span class="op">=</span><span class="dv">0</span>)</span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>new_cohort_table </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="36">
+<div class="cell-output cell-output-display" data-execution_count="17">
 <div>
 
 
@@ -1886,7 +1884,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<div id="d14a6e3a" class="cell" data-execution_count="18">
+<div id="994baaf1" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create visual (i.e heatmap ) &amp; format for pct values:</span></span>
@@ -1903,7 +1901,7 @@ dtype: object</code></pre>
 </div>
 </div>
 </div>
-<div id="5dc60f86" class="cell" data-execution_count="19">
+<div id="1ae43169" class="cell" data-execution_count="19">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create visual (i.e heatmap ) &amp; format for pct values (with different colour grading):</span></span>
@@ -2070,7 +2068,7 @@ dtype: object</code></pre>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/adeyeye-seyi\.quarto\.pub\/home");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -2407,16 +2405,16 @@ dtype: object</code></pre>
 <span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "A Cohort(churn) Analysis of UCI Irvine Machine Learning Repo Data (Online Retail)"</span></span>
 <span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Adeyeye Seyi Joseph"</span></span>
 <span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "04/06/2026"</span></span>
-<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "churn.jpg"</span></span>
-<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
-<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - Business</span></span>
-<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="co">  - cohorts</span></span>
-<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a><span class="co">  - Churn</span></span>
-<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a><span class="co">  - Attrition</span></span>
-<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Business</span></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - cohorts</span></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="co">  - Churn</span></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a><span class="co">  - Attrition</span></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a><span class="al">![](churn.jpg)</span>{width="640" height="427"}</span>
 <span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>

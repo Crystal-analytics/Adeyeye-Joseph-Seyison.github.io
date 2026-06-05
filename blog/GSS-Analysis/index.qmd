@@ -8,7 +8,6 @@ format:
 description: "An Analysis of the  General Social Survey (GSS) Data: the GSS is one of the most important monitors of American societial attitudes and behaviors over the last 50 years. It measures behaviours since 1972-current. This analysis only filtered for (1972-2014) period"
 author: "Adeyeye Seyi Joseph"
 date: "04/06/2026"
-image: "usa.jpg"
 categories:
   - People
   - Surveys
@@ -19,6 +18,7 @@ categories:
 ---
 
 
+![](usa.jpg){width="640" height="427"}
 
 ```{python}
 # firstly we import the needed modules/libraries:

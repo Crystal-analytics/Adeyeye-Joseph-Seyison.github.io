@@ -233,7 +233,8 @@ if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.M
 </header>
 
 
-<div id="9f927a79" class="cell" data-execution_count="1">
+<p><img src="air.jpg" width="640" height="427"></p>
+<div id="9f93ecbd" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fisrtly we import the needed modules/libraries:</span></span>
@@ -247,7 +248,7 @@ if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.M
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="ef1d063c" class="cell" data-execution_count="2">
+<div id="3ebfaafe" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in the data set:</span></span>
@@ -417,7 +418,7 @@ if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.M
 </div>
 </div>
 </div>
-<div id="01884c21" class="cell" data-execution_count="3">
+<div id="21228152" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Taking an overview of data </span></span>
@@ -467,7 +468,7 @@ dtypes: float64(13), int64(6), object(14)
 memory usage: 70.4+ MB</code></pre>
 </div>
 </div>
-<div id="cd4a7ad4" class="cell" data-execution_count="4">
+<div id="93417d18" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#   retaining our original dataframe, by creating a copy:</span></span>
@@ -633,7 +634,7 @@ memory usage: 70.4+ MB</code></pre>
 </div>
 </div>
 </div>
-<div id="40d83dd7" class="cell" data-execution_count="5">
+<div id="21c30545" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># preview all col names</span></span>
@@ -644,7 +645,7 @@ memory usage: 70.4+ MB</code></pre>
 <pre><code>['listing_id', 'name', 'host_id', 'host_since', 'host_location', 'host_response_time', 'host_response_rate', 'host_acceptance_rate', 'host_is_superhost', 'host_total_listings_count', 'host_has_profile_pic', 'host_identity_verified', 'neighbourhood', 'district', 'city', 'latitude', 'longitude', 'property_type', 'room_type', 'accommodates', 'bedrooms', 'amenities', 'price', 'minimum_nights', 'maximum_nights', 'review_scores_rating', 'review_scores_accuracy', 'review_scores_cleanliness', 'review_scores_checkin', 'review_scores_communication', 'review_scores_location', 'review_scores_value', 'instant_bookable']</code></pre>
 </div>
 </div>
-<div id="fcd7b15d" class="cell" data-execution_count="6">
+<div id="cb1072e1" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># format date col correctly:</span></span>
@@ -694,7 +695,7 @@ dtypes: datetime64[ns](1), float64(13), int64(6), object(13)
 memory usage: 70.4+ MB</code></pre>
 </div>
 </div>
-<div id="6e6a8f2d" class="cell" data-execution_count="7">
+<div id="82afc3b1" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># filtering for only Paris location</span></span>
@@ -722,7 +723,7 @@ dtypes: datetime64[ns](1), int64(2), object(2)
 memory usage: 3.0+ MB</code></pre>
 </div>
 </div>
-<div id="f7d75e26" class="cell" data-execution_count="8">
+<div id="66baf885" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># checking for NAs values :</span></span>
@@ -738,7 +739,7 @@ price             0
 dtype: int64</code></pre>
 </div>
 </div>
-<div id="855698b5" class="cell" data-execution_count="9">
+<div id="b74e3fc6" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get an overview of our basic stats:</span></span>
@@ -812,7 +813,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="9016a657" class="cell" data-execution_count="10">
+<div id="6cac2ce8" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># inspecting cols where accommodates =0 as well as price</span></span>
@@ -827,7 +828,7 @@ price            54
 dtype: int64</code></pre>
 </div>
 </div>
-<div id="9e8e415b" class="cell" data-execution_count="11">
+<div id="b82f604c" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>paris_listing_neighbourhood <span class="op">=</span> (</span>
@@ -884,7 +885,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="2375ad70" class="cell" data-execution_count="12">
+<div id="6226da2f" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># filtering for accommodation in the most expensive parts of Paris:</span></span>
@@ -941,7 +942,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="00ed4417" class="cell" data-execution_count="13">
+<div id="25d545e2" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creating a table for time series object</span></span>
@@ -1053,7 +1054,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="e111ac0a" class="cell" data-execution_count="14">
+<div id="12b2b845" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing via a barplot:</span></span>
@@ -1071,7 +1072,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="e79bd952" class="cell" data-execution_count="15">
+<div id="f41d4817" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing via the plotly api:</span></span>
@@ -1099,9 +1100,9 @@ dtype: int64</code></pre>
 </details>
 <div class="cell-output cell-output-display">
 <div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha256-Ei4740bWZhaUTQuD6q9yQlgVCMPBz6CZWhevDYPv93A=" crossorigin="anonymous"></script>                <div id="2173e8a8-ba66-420f-93ad-dd893c1c7fbc" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("2173e8a8-ba66-420f-93ad-dd893c1c7fbc")) {                    Plotly.newPlot(                        "2173e8a8-ba66-420f-93ad-dd893c1c7fbc",                        [{"hovertemplate":"Average Price(Euros)=%{x}\u003cbr\u003eParis Neighbourhood=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"","orientation":"h","showlegend":false,"textposition":"auto","x":{"dtype":"f8","bdata":"LS0tLS1RakCjiy66KOxlQMOyldigJGRAQMyxFmmbY0BHXUy6b3RjQLKspcrlr2JAE8xzhRsPYkDlRq9fTE5hQFkDb6hgql5AzG3eJXnCXUC0e\u002fqDNLVaQAf6HuTlvVlAWVzHgjanWUDDOBWqeXdZQMXXwEINh1hAfjplK86jVkASzXfdvENWQEhS4hpozVVAYMHQ8iusVEDy10nuTbxSQA=="},"xaxis":"x","y":["Elysee","Louvre","Passy","Palais-Bourbon","Luxembourg","Bourse","Hotel-de-Ville","Temple","Pantheon","Opera","Vaugirard","Enclos-St-Laurent","Batignolles-Monceau","Observatoire","Gobelins","Popincourt","Reuilly","Buttes-Montmartre","Buttes-Chaumont","Menilmontant"],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Average Price(Euros)"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Paris Neighbourhood"},"categoryorder":"array","categoryarray":["Elysee","Louvre","Passy","Palais-Bourbon","Luxembourg","Bourse","Hotel-de-Ville","Temple","Pantheon","Opera","Vaugirard","Enclos-St-Laurent","Batignolles-Monceau","Observatoire","Gobelins","Popincourt","Reuilly","Buttes-Montmartre","Buttes-Chaumont","Menilmontant"],"autorange":"reversed"},"legend":{"tracegroupgap":0},"title":{"text":"Average Price Listing by Paris Neighbourhood"},"barmode":"relative"},                        {"responsive": true}                    ).then(function(){
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha256-Ei4740bWZhaUTQuD6q9yQlgVCMPBz6CZWhevDYPv93A=" crossorigin="anonymous"></script>                <div id="542cd6b3-ad03-460d-8c2a-7b4b551a7fa7" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("542cd6b3-ad03-460d-8c2a-7b4b551a7fa7")) {                    Plotly.newPlot(                        "542cd6b3-ad03-460d-8c2a-7b4b551a7fa7",                        [{"hovertemplate":"Average Price(Euros)=%{x}\u003cbr\u003eParis Neighbourhood=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"","orientation":"h","showlegend":false,"textposition":"auto","x":{"dtype":"f8","bdata":"LS0tLS1RakCjiy66KOxlQMOyldigJGRAQMyxFmmbY0BHXUy6b3RjQLKspcrlr2JAE8xzhRsPYkDlRq9fTE5hQFkDb6hgql5AzG3eJXnCXUC0e\u002fqDNLVaQAf6HuTlvVlAWVzHgjanWUDDOBWqeXdZQMXXwEINh1hAfjplK86jVkASzXfdvENWQEhS4hpozVVAYMHQ8iusVEDy10nuTbxSQA=="},"xaxis":"x","y":["Elysee","Louvre","Passy","Palais-Bourbon","Luxembourg","Bourse","Hotel-de-Ville","Temple","Pantheon","Opera","Vaugirard","Enclos-St-Laurent","Batignolles-Monceau","Observatoire","Gobelins","Popincourt","Reuilly","Buttes-Montmartre","Buttes-Chaumont","Menilmontant"],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Average Price(Euros)"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Paris Neighbourhood"},"categoryorder":"array","categoryarray":["Elysee","Louvre","Passy","Palais-Bourbon","Luxembourg","Bourse","Hotel-de-Ville","Temple","Pantheon","Opera","Vaugirard","Enclos-St-Laurent","Batignolles-Monceau","Observatoire","Gobelins","Popincourt","Reuilly","Buttes-Montmartre","Buttes-Chaumont","Menilmontant"],"autorange":"reversed"},"legend":{"tracegroupgap":0},"title":{"text":"Average Price Listing by Paris Neighbourhood"},"barmode":"relative"},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('2173e8a8-ba66-420f-93ad-dd893c1c7fbc');
+var gd = document.getElementById('542cd6b3-ad03-460d-8c2a-7b4b551a7fa7');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -1126,7 +1127,7 @@ if (outputEl) {{
                         })                };            </script>        </div>
 </div>
 </div>
-<div id="a81c5673" class="cell" data-execution_count="16">
+<div id="7f03f236" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing average price of Paris listing accommodation:</span></span>
@@ -1147,9 +1148,9 @@ if (outputEl) {{
 </details>
 <div class="cell-output cell-output-display">
 <div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha256-Ei4740bWZhaUTQuD6q9yQlgVCMPBz6CZWhevDYPv93A=" crossorigin="anonymous"></script>                <div id="67ff10ec-2467-467b-8e3d-552771c674d3" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("67ff10ec-2467-467b-8e3d-552771c674d3")) {                    Plotly.newPlot(                        "67ff10ec-2467-467b-8e3d-552771c674d3",                        [{"hovertemplate":"variable=price\u003cbr\u003eaccommodates=%{x}\u003cbr\u003evalue=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"price","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"price","orientation":"v","showlegend":true,"textposition":"auto","x":{"dtype":"i1","bdata":"AAEDAgQFBggHCQoMEAsNDg=="},"xaxis":"x","y":{"dtype":"f8","bdata":"AAAAAAAAAAAXbMEWbOFTQKhQoUKFGmNAt4DCqE5jY0D0Lh4BE4NqQLUrUbsSjXRAT1bLGyM4dkCF9hLaS1h5QIqd2ImduHlAdNFFF12Ee0Dbtm3btk1\u002fQAAAAAAAjYBAAAAAAAAAiUAAAAAAACiJQAAAAAAAVIpAAAAAAABYjkA="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Accommodation Capacity"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Price (Euros)"}},"legend":{"title":{"text":"variable"},"tracegroupgap":0},"title":{"text":"Average Price Listing by Paris Neighbourhood"},"barmode":"relative","showlegend":false},                        {"responsive": true}                    ).then(function(){
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha256-Ei4740bWZhaUTQuD6q9yQlgVCMPBz6CZWhevDYPv93A=" crossorigin="anonymous"></script>                <div id="3d01373a-5626-4124-9f5f-ea875ad6ee52" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("3d01373a-5626-4124-9f5f-ea875ad6ee52")) {                    Plotly.newPlot(                        "3d01373a-5626-4124-9f5f-ea875ad6ee52",                        [{"hovertemplate":"variable=price\u003cbr\u003eaccommodates=%{x}\u003cbr\u003evalue=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"price","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"price","orientation":"v","showlegend":true,"textposition":"auto","x":{"dtype":"i1","bdata":"AAEDAgQFBggHCQoMEAsNDg=="},"xaxis":"x","y":{"dtype":"f8","bdata":"AAAAAAAAAAAXbMEWbOFTQKhQoUKFGmNAt4DCqE5jY0D0Lh4BE4NqQLUrUbsSjXRAT1bLGyM4dkCF9hLaS1h5QIqd2ImduHlAdNFFF12Ee0Dbtm3btk1\u002fQAAAAAAAjYBAAAAAAAAAiUAAAAAAACiJQAAAAAAAVIpAAAAAAABYjkA="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"},"margin":{"b":0,"l":0,"r":0,"t":30}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Accommodation Capacity"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Price (Euros)"}},"legend":{"title":{"text":"variable"},"tracegroupgap":0},"title":{"text":"Average Price Listing by Paris Neighbourhood"},"barmode":"relative","showlegend":false},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('67ff10ec-2467-467b-8e3d-552771c674d3');
+var gd = document.getElementById('3d01373a-5626-4124-9f5f-ea875ad6ee52');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -1174,7 +1175,7 @@ if (outputEl) {{
                         })                };            </script>        </div>
 </div>
 </div>
-<div id="e55d26ff" class="cell" data-execution_count="17">
+<div id="95a8d85a" class="cell" data-execution_count="17">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing via the pandas API : the price vs accommodation capacity in Paris</span></span>
@@ -1196,7 +1197,7 @@ if (outputEl) {{
 </div>
 </div>
 </div>
-<div id="d8d753ed" class="cell" data-execution_count="18">
+<div id="928568f1" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating dual axis plot : firstly we need paris listing over time plot</span></span>
@@ -1218,7 +1219,7 @@ if (outputEl) {{
 </div>
 </div>
 </div>
-<div id="65d0b5f9" class="cell" data-execution_count="19">
+<div id="23a40155" class="cell" data-execution_count="19">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># secondly we need paris listing over time by average price plot</span></span>
@@ -1239,7 +1240,7 @@ if (outputEl) {{
 </div>
 </div>
 </div>
-<div id="9ddffd19" class="cell" data-execution_count="20">
+<div id="512a3ba5" class="cell" data-execution_count="20">
 <details class="code-fold">
 <summary>show the code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># combining both plots together via the twinx() method from matplolib:</span></span>
@@ -1760,282 +1761,282 @@ if (outputEl) {{
 <span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "An Analysis of Airbnb data for over 250k listings in 10 major cities, including information about hosts, pricing, location, and room type, along with over 5 million historical reviews (targeting city of Paris only)"</span></span>
 <span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Adeyeye Seyi Joseph"</span></span>
 <span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "04/06/2026"</span></span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "air.jpg"</span></span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
-<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - Business</span></span>
-<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a><span class="co">  - Rentals</span></span>
-<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a><span class="co">  - Accommodation</span></span>
-<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Business</span></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - Rentals</span></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a><span class="co">  - Accommodation</span></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a><span class="al">![](air.jpg)</span>{width="640" height="427"}</span>
 <span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a><span class="co"># fisrtly we import the needed modules/libraries:</span></span>
-<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
-<span id="cb27-26"><a href="#cb27-26" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
-<span id="cb27-27"><a href="#cb27-27" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas <span class="im">import</span> read_csv</span>
-<span id="cb27-28"><a href="#cb27-28" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb27-29"><a href="#cb27-29" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb27-30"><a href="#cb27-30" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
-<span id="cb27-31"><a href="#cb27-31" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
-<span id="cb27-32"><a href="#cb27-32" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-33"><a href="#cb27-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a><span class="co"># fisrtly we import the needed modules/libraries:</span></span>
+<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-26"><a href="#cb27-26" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
+<span id="cb27-27"><a href="#cb27-27" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
+<span id="cb27-28"><a href="#cb27-28" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas <span class="im">import</span> read_csv</span>
+<span id="cb27-29"><a href="#cb27-29" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb27-30"><a href="#cb27-30" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb27-31"><a href="#cb27-31" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
+<span id="cb27-32"><a href="#cb27-32" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb27-33"><a href="#cb27-33" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-34"><a href="#cb27-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-37"><a href="#cb27-37" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-38"><a href="#cb27-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in the data set:</span></span>
-<span id="cb27-39"><a href="#cb27-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-40"><a href="#cb27-40" aria-hidden="true" tabindex="-1"></a>listing <span class="op">=</span> pd.read_csv(<span class="st">"C:</span><span class="ch">\\</span><span class="st">Users</span><span class="ch">\\</span><span class="st">hp</span><span class="ch">\\</span><span class="st">Desktop</span><span class="ch">\\</span><span class="st">python</span><span class="ch">\\</span><span class="st">projects</span><span class="ch">\\</span><span class="st">Listings.csv"</span>, </span>
-<span id="cb27-41"><a href="#cb27-41" aria-hidden="true" tabindex="-1"></a>                low_memory <span class="op">=</span> <span class="va">False</span>, </span>
-<span id="cb27-42"><a href="#cb27-42" aria-hidden="true" tabindex="-1"></a>                encoding <span class="op">=</span> <span class="st">"ISO-8859-1"</span>)</span>
-<span id="cb27-43"><a href="#cb27-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-44"><a href="#cb27-44" aria-hidden="true" tabindex="-1"></a>listing.head()</span>
-<span id="cb27-45"><a href="#cb27-45" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-46"><a href="#cb27-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-35"><a href="#cb27-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-38"><a href="#cb27-38" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-39"><a href="#cb27-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in the data set:</span></span>
+<span id="cb27-40"><a href="#cb27-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-41"><a href="#cb27-41" aria-hidden="true" tabindex="-1"></a>listing <span class="op">=</span> pd.read_csv(<span class="st">"C:</span><span class="ch">\\</span><span class="st">Users</span><span class="ch">\\</span><span class="st">hp</span><span class="ch">\\</span><span class="st">Desktop</span><span class="ch">\\</span><span class="st">python</span><span class="ch">\\</span><span class="st">projects</span><span class="ch">\\</span><span class="st">Listings.csv"</span>, </span>
+<span id="cb27-42"><a href="#cb27-42" aria-hidden="true" tabindex="-1"></a>                low_memory <span class="op">=</span> <span class="va">False</span>, </span>
+<span id="cb27-43"><a href="#cb27-43" aria-hidden="true" tabindex="-1"></a>                encoding <span class="op">=</span> <span class="st">"ISO-8859-1"</span>)</span>
+<span id="cb27-44"><a href="#cb27-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-45"><a href="#cb27-45" aria-hidden="true" tabindex="-1"></a>listing.head()</span>
+<span id="cb27-46"><a href="#cb27-46" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-47"><a href="#cb27-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-50"><a href="#cb27-50" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-51"><a href="#cb27-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Taking an overview of data </span></span>
-<span id="cb27-52"><a href="#cb27-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-53"><a href="#cb27-53" aria-hidden="true" tabindex="-1"></a>listing.info()</span>
-<span id="cb27-54"><a href="#cb27-54" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-55"><a href="#cb27-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-48"><a href="#cb27-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-51"><a href="#cb27-51" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-52"><a href="#cb27-52" aria-hidden="true" tabindex="-1"></a><span class="co"># Taking an overview of data </span></span>
+<span id="cb27-53"><a href="#cb27-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-54"><a href="#cb27-54" aria-hidden="true" tabindex="-1"></a>listing.info()</span>
+<span id="cb27-55"><a href="#cb27-55" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-56"><a href="#cb27-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-59"><a href="#cb27-59" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-60"><a href="#cb27-60" aria-hidden="true" tabindex="-1"></a><span class="co">#   retaining our original dataframe, by creating a copy:</span></span>
-<span id="cb27-61"><a href="#cb27-61" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> listing.copy()</span>
-<span id="cb27-62"><a href="#cb27-62" aria-hidden="true" tabindex="-1"></a>df.head()</span>
-<span id="cb27-63"><a href="#cb27-63" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-64"><a href="#cb27-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-57"><a href="#cb27-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-60"><a href="#cb27-60" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-61"><a href="#cb27-61" aria-hidden="true" tabindex="-1"></a><span class="co">#   retaining our original dataframe, by creating a copy:</span></span>
+<span id="cb27-62"><a href="#cb27-62" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> listing.copy()</span>
+<span id="cb27-63"><a href="#cb27-63" aria-hidden="true" tabindex="-1"></a>df.head()</span>
+<span id="cb27-64"><a href="#cb27-64" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-65"><a href="#cb27-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-68"><a href="#cb27-68" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-69"><a href="#cb27-69" aria-hidden="true" tabindex="-1"></a><span class="co"># preview all col names</span></span>
-<span id="cb27-70"><a href="#cb27-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-71"><a href="#cb27-71" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.columns.tolist())</span>
-<span id="cb27-72"><a href="#cb27-72" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-73"><a href="#cb27-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-66"><a href="#cb27-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-69"><a href="#cb27-69" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-70"><a href="#cb27-70" aria-hidden="true" tabindex="-1"></a><span class="co"># preview all col names</span></span>
+<span id="cb27-71"><a href="#cb27-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-72"><a href="#cb27-72" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.columns.tolist())</span>
+<span id="cb27-73"><a href="#cb27-73" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-74"><a href="#cb27-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-77"><a href="#cb27-77" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-78"><a href="#cb27-78" aria-hidden="true" tabindex="-1"></a><span class="co"># format date col correctly:</span></span>
-<span id="cb27-79"><a href="#cb27-79" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"host_since"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"host_since"</span>])</span>
-<span id="cb27-80"><a href="#cb27-80" aria-hidden="true" tabindex="-1"></a>df.info() </span>
-<span id="cb27-81"><a href="#cb27-81" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-82"><a href="#cb27-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-75"><a href="#cb27-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-78"><a href="#cb27-78" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-79"><a href="#cb27-79" aria-hidden="true" tabindex="-1"></a><span class="co"># format date col correctly:</span></span>
+<span id="cb27-80"><a href="#cb27-80" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"host_since"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"host_since"</span>])</span>
+<span id="cb27-81"><a href="#cb27-81" aria-hidden="true" tabindex="-1"></a>df.info() </span>
+<span id="cb27-82"><a href="#cb27-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-83"><a href="#cb27-83" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-84"><a href="#cb27-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-87"><a href="#cb27-87" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-88"><a href="#cb27-88" aria-hidden="true" tabindex="-1"></a><span class="co"># filtering for only Paris location</span></span>
-<span id="cb27-89"><a href="#cb27-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-90"><a href="#cb27-90" aria-hidden="true" tabindex="-1"></a>paris_listing <span class="op">=</span> (</span>
-<span id="cb27-91"><a href="#cb27-91" aria-hidden="true" tabindex="-1"></a>    df</span>
-<span id="cb27-92"><a href="#cb27-92" aria-hidden="true" tabindex="-1"></a>    .query(<span class="st">" city == 'Paris' "</span>)</span>
-<span id="cb27-93"><a href="#cb27-93" aria-hidden="true" tabindex="-1"></a>    .loc[:, [<span class="st">"host_since"</span>, <span class="st">"city"</span>, <span class="st">"neighbourhood"</span>, <span class="st">"accommodates"</span>, <span class="st">"price"</span>]] </span>
-<span id="cb27-94"><a href="#cb27-94" aria-hidden="true" tabindex="-1"></a>)   </span>
-<span id="cb27-95"><a href="#cb27-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-96"><a href="#cb27-96" aria-hidden="true" tabindex="-1"></a>paris_listing.info()</span>
-<span id="cb27-97"><a href="#cb27-97" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-98"><a href="#cb27-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-85"><a href="#cb27-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-88"><a href="#cb27-88" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-89"><a href="#cb27-89" aria-hidden="true" tabindex="-1"></a><span class="co"># filtering for only Paris location</span></span>
+<span id="cb27-90"><a href="#cb27-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-91"><a href="#cb27-91" aria-hidden="true" tabindex="-1"></a>paris_listing <span class="op">=</span> (</span>
+<span id="cb27-92"><a href="#cb27-92" aria-hidden="true" tabindex="-1"></a>    df</span>
+<span id="cb27-93"><a href="#cb27-93" aria-hidden="true" tabindex="-1"></a>    .query(<span class="st">" city == 'Paris' "</span>)</span>
+<span id="cb27-94"><a href="#cb27-94" aria-hidden="true" tabindex="-1"></a>    .loc[:, [<span class="st">"host_since"</span>, <span class="st">"city"</span>, <span class="st">"neighbourhood"</span>, <span class="st">"accommodates"</span>, <span class="st">"price"</span>]] </span>
+<span id="cb27-95"><a href="#cb27-95" aria-hidden="true" tabindex="-1"></a>)   </span>
+<span id="cb27-96"><a href="#cb27-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-97"><a href="#cb27-97" aria-hidden="true" tabindex="-1"></a>paris_listing.info()</span>
+<span id="cb27-98"><a href="#cb27-98" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-99"><a href="#cb27-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-102"><a href="#cb27-102" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-103"><a href="#cb27-103" aria-hidden="true" tabindex="-1"></a><span class="co"># checking for NAs values :</span></span>
-<span id="cb27-104"><a href="#cb27-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-105"><a href="#cb27-105" aria-hidden="true" tabindex="-1"></a>paris_listing.isna().<span class="bu">sum</span>()</span>
-<span id="cb27-106"><a href="#cb27-106" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-107"><a href="#cb27-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-100"><a href="#cb27-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-103"><a href="#cb27-103" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-104"><a href="#cb27-104" aria-hidden="true" tabindex="-1"></a><span class="co"># checking for NAs values :</span></span>
+<span id="cb27-105"><a href="#cb27-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-106"><a href="#cb27-106" aria-hidden="true" tabindex="-1"></a>paris_listing.isna().<span class="bu">sum</span>()</span>
+<span id="cb27-107"><a href="#cb27-107" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-108"><a href="#cb27-108" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-109"><a href="#cb27-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-112"><a href="#cb27-112" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-113"><a href="#cb27-113" aria-hidden="true" tabindex="-1"></a><span class="co"># Get an overview of our basic stats:</span></span>
-<span id="cb27-114"><a href="#cb27-114" aria-hidden="true" tabindex="-1"></a>paris_listing.describe()</span>
-<span id="cb27-115"><a href="#cb27-115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-116"><a href="#cb27-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-110"><a href="#cb27-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-113"><a href="#cb27-113" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-114"><a href="#cb27-114" aria-hidden="true" tabindex="-1"></a><span class="co"># Get an overview of our basic stats:</span></span>
+<span id="cb27-115"><a href="#cb27-115" aria-hidden="true" tabindex="-1"></a>paris_listing.describe()</span>
+<span id="cb27-116"><a href="#cb27-116" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-117"><a href="#cb27-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-120"><a href="#cb27-120" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-121"><a href="#cb27-121" aria-hidden="true" tabindex="-1"></a><span class="co"># inspecting cols where accommodates =0 as well as price</span></span>
-<span id="cb27-122"><a href="#cb27-122" aria-hidden="true" tabindex="-1"></a>paris_listing.query(<span class="st">" accommodates == 0 and price == 0 "</span>).count()</span>
-<span id="cb27-123"><a href="#cb27-123" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-124"><a href="#cb27-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-118"><a href="#cb27-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-121"><a href="#cb27-121" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-122"><a href="#cb27-122" aria-hidden="true" tabindex="-1"></a><span class="co"># inspecting cols where accommodates =0 as well as price</span></span>
+<span id="cb27-123"><a href="#cb27-123" aria-hidden="true" tabindex="-1"></a>paris_listing.query(<span class="st">" accommodates == 0 and price == 0 "</span>).count()</span>
+<span id="cb27-124"><a href="#cb27-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-125"><a href="#cb27-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-128"><a href="#cb27-128" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-129"><a href="#cb27-129" aria-hidden="true" tabindex="-1"></a>paris_listing_neighbourhood <span class="op">=</span> (</span>
-<span id="cb27-130"><a href="#cb27-130" aria-hidden="true" tabindex="-1"></a>    paris_listing</span>
-<span id="cb27-131"><a href="#cb27-131" aria-hidden="true" tabindex="-1"></a>    .groupby(<span class="st">"neighbourhood"</span>)</span>
-<span id="cb27-132"><a href="#cb27-132" aria-hidden="true" tabindex="-1"></a>    .agg(avg_price<span class="op">=</span>(<span class="st">"price"</span>, <span class="st">"mean"</span>))</span>
-<span id="cb27-133"><a href="#cb27-133" aria-hidden="true" tabindex="-1"></a>    .sort_values(by<span class="op">=</span><span class="st">"avg_price"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb27-134"><a href="#cb27-134" aria-hidden="true" tabindex="-1"></a>    .reset_index()</span>
-<span id="cb27-135"><a href="#cb27-135" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-136"><a href="#cb27-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-137"><a href="#cb27-137" aria-hidden="true" tabindex="-1"></a>paris_listing_neighbourhood.head() </span>
-<span id="cb27-138"><a href="#cb27-138" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-139"><a href="#cb27-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-126"><a href="#cb27-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-129"><a href="#cb27-129" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-130"><a href="#cb27-130" aria-hidden="true" tabindex="-1"></a>paris_listing_neighbourhood <span class="op">=</span> (</span>
+<span id="cb27-131"><a href="#cb27-131" aria-hidden="true" tabindex="-1"></a>    paris_listing</span>
+<span id="cb27-132"><a href="#cb27-132" aria-hidden="true" tabindex="-1"></a>    .groupby(<span class="st">"neighbourhood"</span>)</span>
+<span id="cb27-133"><a href="#cb27-133" aria-hidden="true" tabindex="-1"></a>    .agg(avg_price<span class="op">=</span>(<span class="st">"price"</span>, <span class="st">"mean"</span>))</span>
+<span id="cb27-134"><a href="#cb27-134" aria-hidden="true" tabindex="-1"></a>    .sort_values(by<span class="op">=</span><span class="st">"avg_price"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb27-135"><a href="#cb27-135" aria-hidden="true" tabindex="-1"></a>    .reset_index()</span>
+<span id="cb27-136"><a href="#cb27-136" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-137"><a href="#cb27-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-138"><a href="#cb27-138" aria-hidden="true" tabindex="-1"></a>paris_listing_neighbourhood.head() </span>
+<span id="cb27-139"><a href="#cb27-139" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-140"><a href="#cb27-140" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-141"><a href="#cb27-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-144"><a href="#cb27-144" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-145"><a href="#cb27-145" aria-hidden="true" tabindex="-1"></a><span class="co"># filtering for accommodation in the most expensive parts of Paris:</span></span>
-<span id="cb27-146"><a href="#cb27-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-147"><a href="#cb27-147" aria-hidden="true" tabindex="-1"></a>paris_listing_accommodates <span class="op">=</span> (</span>
-<span id="cb27-148"><a href="#cb27-148" aria-hidden="true" tabindex="-1"></a>   paris_listing</span>
-<span id="cb27-149"><a href="#cb27-149" aria-hidden="true" tabindex="-1"></a>   .query(<span class="st">" neighbourhood == 'Elysee' "</span>)</span>
-<span id="cb27-150"><a href="#cb27-150" aria-hidden="true" tabindex="-1"></a>   .groupby([<span class="st">"accommodates"</span>], as_index<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb27-151"><a href="#cb27-151" aria-hidden="true" tabindex="-1"></a>   .agg({<span class="st">"price"</span>: <span class="st">"mean"</span>})</span>
-<span id="cb27-152"><a href="#cb27-152" aria-hidden="true" tabindex="-1"></a>   .sort_values(by<span class="op">=</span><span class="st">"price"</span>)</span>
-<span id="cb27-153"><a href="#cb27-153" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-154"><a href="#cb27-154" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb27-155"><a href="#cb27-155" aria-hidden="true" tabindex="-1"></a>paris_listing_accommodates.head()</span>
-<span id="cb27-156"><a href="#cb27-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-157"><a href="#cb27-157" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-158"><a href="#cb27-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-142"><a href="#cb27-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-145"><a href="#cb27-145" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-146"><a href="#cb27-146" aria-hidden="true" tabindex="-1"></a><span class="co"># filtering for accommodation in the most expensive parts of Paris:</span></span>
+<span id="cb27-147"><a href="#cb27-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-148"><a href="#cb27-148" aria-hidden="true" tabindex="-1"></a>paris_listing_accommodates <span class="op">=</span> (</span>
+<span id="cb27-149"><a href="#cb27-149" aria-hidden="true" tabindex="-1"></a>   paris_listing</span>
+<span id="cb27-150"><a href="#cb27-150" aria-hidden="true" tabindex="-1"></a>   .query(<span class="st">" neighbourhood == 'Elysee' "</span>)</span>
+<span id="cb27-151"><a href="#cb27-151" aria-hidden="true" tabindex="-1"></a>   .groupby([<span class="st">"accommodates"</span>], as_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb27-152"><a href="#cb27-152" aria-hidden="true" tabindex="-1"></a>   .agg({<span class="st">"price"</span>: <span class="st">"mean"</span>})</span>
+<span id="cb27-153"><a href="#cb27-153" aria-hidden="true" tabindex="-1"></a>   .sort_values(by<span class="op">=</span><span class="st">"price"</span>)</span>
+<span id="cb27-154"><a href="#cb27-154" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-155"><a href="#cb27-155" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb27-156"><a href="#cb27-156" aria-hidden="true" tabindex="-1"></a>paris_listing_accommodates.head()</span>
+<span id="cb27-157"><a href="#cb27-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-158"><a href="#cb27-158" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-159"><a href="#cb27-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-162"><a href="#cb27-162" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-163"><a href="#cb27-163" aria-hidden="true" tabindex="-1"></a><span class="co"># creating a table for time series object</span></span>
-<span id="cb27-164"><a href="#cb27-164" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings </span>
-<span id="cb27-165"><a href="#cb27-165" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>)</span>
-<span id="cb27-166"><a href="#cb27-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-167"><a href="#cb27-167" aria-hidden="true" tabindex="-1"></a>paris_listing_over_time <span class="op">=</span> (</span>
-<span id="cb27-168"><a href="#cb27-168" aria-hidden="true" tabindex="-1"></a>        paris_listing</span>
-<span id="cb27-169"><a href="#cb27-169" aria-hidden="true" tabindex="-1"></a>        .set_index(<span class="st">"host_since"</span>)</span>
-<span id="cb27-170"><a href="#cb27-170" aria-hidden="true" tabindex="-1"></a>        .resample(<span class="st">"YE"</span>)</span>
-<span id="cb27-171"><a href="#cb27-171" aria-hidden="true" tabindex="-1"></a>        .agg({ <span class="st">"price"</span>: <span class="st">"mean"</span>, <span class="st">"neighbourhood"</span>:<span class="st">"count"</span>})</span>
-<span id="cb27-172"><a href="#cb27-172" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb27-173"><a href="#cb27-173" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-174"><a href="#cb27-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-160"><a href="#cb27-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-163"><a href="#cb27-163" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-164"><a href="#cb27-164" aria-hidden="true" tabindex="-1"></a><span class="co"># creating a table for time series object</span></span>
+<span id="cb27-165"><a href="#cb27-165" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings </span>
+<span id="cb27-166"><a href="#cb27-166" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>)</span>
+<span id="cb27-167"><a href="#cb27-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-168"><a href="#cb27-168" aria-hidden="true" tabindex="-1"></a>paris_listing_over_time <span class="op">=</span> (</span>
+<span id="cb27-169"><a href="#cb27-169" aria-hidden="true" tabindex="-1"></a>        paris_listing</span>
+<span id="cb27-170"><a href="#cb27-170" aria-hidden="true" tabindex="-1"></a>        .set_index(<span class="st">"host_since"</span>)</span>
+<span id="cb27-171"><a href="#cb27-171" aria-hidden="true" tabindex="-1"></a>        .resample(<span class="st">"YE"</span>)</span>
+<span id="cb27-172"><a href="#cb27-172" aria-hidden="true" tabindex="-1"></a>        .agg({ <span class="st">"price"</span>: <span class="st">"mean"</span>, <span class="st">"neighbourhood"</span>:<span class="st">"count"</span>})</span>
+<span id="cb27-173"><a href="#cb27-173" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-174"><a href="#cb27-174" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb27-175"><a href="#cb27-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-176"><a href="#cb27-176" aria-hidden="true" tabindex="-1"></a>paris_listing_over_time</span>
-<span id="cb27-177"><a href="#cb27-177" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-178"><a href="#cb27-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-176"><a href="#cb27-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-177"><a href="#cb27-177" aria-hidden="true" tabindex="-1"></a>paris_listing_over_time</span>
+<span id="cb27-178"><a href="#cb27-178" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-179"><a href="#cb27-179" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-180"><a href="#cb27-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-183"><a href="#cb27-183" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-184"><a href="#cb27-184" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing via a barplot:</span></span>
-<span id="cb27-185"><a href="#cb27-185" aria-hidden="true" tabindex="-1"></a>sns.barplot(paris_listing_neighbourhood, </span>
-<span id="cb27-186"><a href="#cb27-186" aria-hidden="true" tabindex="-1"></a>            x <span class="op">=</span> <span class="st">"avg_price"</span>,</span>
-<span id="cb27-187"><a href="#cb27-187" aria-hidden="true" tabindex="-1"></a>            y<span class="op">=</span> <span class="st">"neighbourhood"</span>)</span>
-<span id="cb27-188"><a href="#cb27-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-189"><a href="#cb27-189" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb27-190"><a href="#cb27-190" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-191"><a href="#cb27-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-181"><a href="#cb27-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-184"><a href="#cb27-184" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-185"><a href="#cb27-185" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing via a barplot:</span></span>
+<span id="cb27-186"><a href="#cb27-186" aria-hidden="true" tabindex="-1"></a>sns.barplot(paris_listing_neighbourhood, </span>
+<span id="cb27-187"><a href="#cb27-187" aria-hidden="true" tabindex="-1"></a>            x <span class="op">=</span> <span class="st">"avg_price"</span>,</span>
+<span id="cb27-188"><a href="#cb27-188" aria-hidden="true" tabindex="-1"></a>            y<span class="op">=</span> <span class="st">"neighbourhood"</span>)</span>
+<span id="cb27-189"><a href="#cb27-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-190"><a href="#cb27-190" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb27-191"><a href="#cb27-191" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-192"><a href="#cb27-192" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-193"><a href="#cb27-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-196"><a href="#cb27-196" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-197"><a href="#cb27-197" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing via the plotly api:</span></span>
-<span id="cb27-198"><a href="#cb27-198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-199"><a href="#cb27-199" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.bar(</span>
-<span id="cb27-200"><a href="#cb27-200" aria-hidden="true" tabindex="-1"></a>    paris_listing_neighbourhood,</span>
-<span id="cb27-201"><a href="#cb27-201" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"avg_price"</span>,</span>
-<span id="cb27-202"><a href="#cb27-202" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">"neighbourhood"</span>,</span>
-<span id="cb27-203"><a href="#cb27-203" aria-hidden="true" tabindex="-1"></a>    orientation<span class="op">=</span><span class="st">"h"</span>,</span>
-<span id="cb27-204"><a href="#cb27-204" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Average Price Listing by Paris Neighbourhood"</span>, </span>
-<span id="cb27-205"><a href="#cb27-205" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>{<span class="st">"avg_price"</span>: <span class="st">"Average Price(Euros)"</span>, </span>
-<span id="cb27-206"><a href="#cb27-206" aria-hidden="true" tabindex="-1"></a>             <span class="st">"neighbourhood"</span>:<span class="st">"Paris Neighbourhood"</span>}</span>
-<span id="cb27-207"><a href="#cb27-207" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-208"><a href="#cb27-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-194"><a href="#cb27-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-197"><a href="#cb27-197" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-198"><a href="#cb27-198" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing via the plotly api:</span></span>
+<span id="cb27-199"><a href="#cb27-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-200"><a href="#cb27-200" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.bar(</span>
+<span id="cb27-201"><a href="#cb27-201" aria-hidden="true" tabindex="-1"></a>    paris_listing_neighbourhood,</span>
+<span id="cb27-202"><a href="#cb27-202" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"avg_price"</span>,</span>
+<span id="cb27-203"><a href="#cb27-203" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">"neighbourhood"</span>,</span>
+<span id="cb27-204"><a href="#cb27-204" aria-hidden="true" tabindex="-1"></a>    orientation<span class="op">=</span><span class="st">"h"</span>,</span>
+<span id="cb27-205"><a href="#cb27-205" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Average Price Listing by Paris Neighbourhood"</span>, </span>
+<span id="cb27-206"><a href="#cb27-206" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>{<span class="st">"avg_price"</span>: <span class="st">"Average Price(Euros)"</span>, </span>
+<span id="cb27-207"><a href="#cb27-207" aria-hidden="true" tabindex="-1"></a>             <span class="st">"neighbourhood"</span>:<span class="st">"Paris Neighbourhood"</span>}</span>
+<span id="cb27-208"><a href="#cb27-208" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb27-209"><a href="#cb27-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-210"><a href="#cb27-210" aria-hidden="true" tabindex="-1"></a>fig.update_yaxes(</span>
-<span id="cb27-211"><a href="#cb27-211" aria-hidden="true" tabindex="-1"></a>    categoryorder<span class="op">=</span><span class="st">'array'</span>,</span>
-<span id="cb27-212"><a href="#cb27-212" aria-hidden="true" tabindex="-1"></a>    categoryarray<span class="op">=</span>paris_listing_neighbourhood[<span class="st">'neighbourhood'</span>]</span>
-<span id="cb27-213"><a href="#cb27-213" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-214"><a href="#cb27-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-215"><a href="#cb27-215" aria-hidden="true" tabindex="-1"></a>fig.update_yaxes(autorange<span class="op">=</span><span class="st">"reversed"</span>)</span>
-<span id="cb27-216"><a href="#cb27-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-210"><a href="#cb27-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-211"><a href="#cb27-211" aria-hidden="true" tabindex="-1"></a>fig.update_yaxes(</span>
+<span id="cb27-212"><a href="#cb27-212" aria-hidden="true" tabindex="-1"></a>    categoryorder<span class="op">=</span><span class="st">'array'</span>,</span>
+<span id="cb27-213"><a href="#cb27-213" aria-hidden="true" tabindex="-1"></a>    categoryarray<span class="op">=</span>paris_listing_neighbourhood[<span class="st">'neighbourhood'</span>]</span>
+<span id="cb27-214"><a href="#cb27-214" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-215"><a href="#cb27-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-216"><a href="#cb27-216" aria-hidden="true" tabindex="-1"></a>fig.update_yaxes(autorange<span class="op">=</span><span class="st">"reversed"</span>)</span>
 <span id="cb27-217"><a href="#cb27-217" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-218"><a href="#cb27-218" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
-<span id="cb27-219"><a href="#cb27-219" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-220"><a href="#cb27-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-218"><a href="#cb27-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-219"><a href="#cb27-219" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
+<span id="cb27-220"><a href="#cb27-220" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-221"><a href="#cb27-221" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-222"><a href="#cb27-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-225"><a href="#cb27-225" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-226"><a href="#cb27-226" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing average price of Paris listing accommodation:</span></span>
-<span id="cb27-227"><a href="#cb27-227" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-228"><a href="#cb27-228" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.bar(</span>
-<span id="cb27-229"><a href="#cb27-229" aria-hidden="true" tabindex="-1"></a>    paris_listing_accommodates,</span>
-<span id="cb27-230"><a href="#cb27-230" aria-hidden="true" tabindex="-1"></a>    orientation<span class="op">=</span><span class="st">"v"</span>,</span>
-<span id="cb27-231"><a href="#cb27-231" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Average Price Listing by Paris Neighbourhood"</span></span>
-<span id="cb27-232"><a href="#cb27-232" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-233"><a href="#cb27-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-234"><a href="#cb27-234" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
-<span id="cb27-235"><a href="#cb27-235" aria-hidden="true" tabindex="-1"></a>    xaxis_title<span class="op">=</span><span class="st">"Accommodation Capacity"</span>,</span>
-<span id="cb27-236"><a href="#cb27-236" aria-hidden="true" tabindex="-1"></a>    yaxis_title<span class="op">=</span><span class="st">"Price (Euros)"</span>)</span>
-<span id="cb27-237"><a href="#cb27-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-238"><a href="#cb27-238" aria-hidden="true" tabindex="-1"></a>fig.update_layout(showlegend<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb27-239"><a href="#cb27-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-240"><a href="#cb27-240" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
-<span id="cb27-241"><a href="#cb27-241" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-242"><a href="#cb27-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-223"><a href="#cb27-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-226"><a href="#cb27-226" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-227"><a href="#cb27-227" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing average price of Paris listing accommodation:</span></span>
+<span id="cb27-228"><a href="#cb27-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-229"><a href="#cb27-229" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.bar(</span>
+<span id="cb27-230"><a href="#cb27-230" aria-hidden="true" tabindex="-1"></a>    paris_listing_accommodates,</span>
+<span id="cb27-231"><a href="#cb27-231" aria-hidden="true" tabindex="-1"></a>    orientation<span class="op">=</span><span class="st">"v"</span>,</span>
+<span id="cb27-232"><a href="#cb27-232" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Average Price Listing by Paris Neighbourhood"</span></span>
+<span id="cb27-233"><a href="#cb27-233" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-234"><a href="#cb27-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-235"><a href="#cb27-235" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb27-236"><a href="#cb27-236" aria-hidden="true" tabindex="-1"></a>    xaxis_title<span class="op">=</span><span class="st">"Accommodation Capacity"</span>,</span>
+<span id="cb27-237"><a href="#cb27-237" aria-hidden="true" tabindex="-1"></a>    yaxis_title<span class="op">=</span><span class="st">"Price (Euros)"</span>)</span>
+<span id="cb27-238"><a href="#cb27-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-239"><a href="#cb27-239" aria-hidden="true" tabindex="-1"></a>fig.update_layout(showlegend<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb27-240"><a href="#cb27-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-241"><a href="#cb27-241" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
+<span id="cb27-242"><a href="#cb27-242" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-243"><a href="#cb27-243" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-244"><a href="#cb27-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-247"><a href="#cb27-247" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-248"><a href="#cb27-248" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing via the pandas API : the price vs accommodation capacity in Paris</span></span>
-<span id="cb27-249"><a href="#cb27-249" aria-hidden="true" tabindex="-1"></a>(paris_listing_accommodates.plot.barh( </span>
-<span id="cb27-250"><a href="#cb27-250" aria-hidden="true" tabindex="-1"></a>            xlabel<span class="op">=</span> <span class="st">"Price"</span>,</span>
-<span id="cb27-251"><a href="#cb27-251" aria-hidden="true" tabindex="-1"></a>            ylabel<span class="op">=</span> <span class="st">"Accommodates"</span>,</span>
-<span id="cb27-252"><a href="#cb27-252" aria-hidden="true" tabindex="-1"></a>            title<span class="op">=</span><span class="st">"Average Listing Price by Accommodation Capacity in Paris Most Expensive Neighbourhood(Elysee)"</span>,</span>
-<span id="cb27-253"><a href="#cb27-253" aria-hidden="true" tabindex="-1"></a>            legend<span class="op">=</span><span class="va">None</span>)</span>
-<span id="cb27-254"><a href="#cb27-254" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-255"><a href="#cb27-255" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-256"><a href="#cb27-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-257"><a href="#cb27-257" aria-hidden="true" tabindex="-1"></a>sns.despine()</span>
-<span id="cb27-258"><a href="#cb27-258" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-259"><a href="#cb27-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-245"><a href="#cb27-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-248"><a href="#cb27-248" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-249"><a href="#cb27-249" aria-hidden="true" tabindex="-1"></a><span class="co"># visualizing via the pandas API : the price vs accommodation capacity in Paris</span></span>
+<span id="cb27-250"><a href="#cb27-250" aria-hidden="true" tabindex="-1"></a>(paris_listing_accommodates.plot.barh( </span>
+<span id="cb27-251"><a href="#cb27-251" aria-hidden="true" tabindex="-1"></a>            xlabel<span class="op">=</span> <span class="st">"Price"</span>,</span>
+<span id="cb27-252"><a href="#cb27-252" aria-hidden="true" tabindex="-1"></a>            ylabel<span class="op">=</span> <span class="st">"Accommodates"</span>,</span>
+<span id="cb27-253"><a href="#cb27-253" aria-hidden="true" tabindex="-1"></a>            title<span class="op">=</span><span class="st">"Average Listing Price by Accommodation Capacity in Paris Most Expensive Neighbourhood(Elysee)"</span>,</span>
+<span id="cb27-254"><a href="#cb27-254" aria-hidden="true" tabindex="-1"></a>            legend<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb27-255"><a href="#cb27-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-256"><a href="#cb27-256" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-257"><a href="#cb27-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-258"><a href="#cb27-258" aria-hidden="true" tabindex="-1"></a>sns.despine()</span>
+<span id="cb27-259"><a href="#cb27-259" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-260"><a href="#cb27-260" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-261"><a href="#cb27-261" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-264"><a href="#cb27-264" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-265"><a href="#cb27-265" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating dual axis plot : firstly we need paris listing over time plot</span></span>
-<span id="cb27-266"><a href="#cb27-266" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-267"><a href="#cb27-267" aria-hidden="true" tabindex="-1"></a>paris_listing_over_time[<span class="st">"neighbourhood"</span>].plot(</span>
-<span id="cb27-268"><a href="#cb27-268" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">=</span><span class="st">"New Host"</span>,</span>
-<span id="cb27-269"><a href="#cb27-269" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">=</span><span class="st">"Year"</span>,</span>
-<span id="cb27-270"><a href="#cb27-270" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"New AirBnB Hosts in Paris Over Time"</span></span>
-<span id="cb27-271"><a href="#cb27-271" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb27-272"><a href="#cb27-272" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-273"><a href="#cb27-273" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-274"><a href="#cb27-274" aria-hidden="true" tabindex="-1"></a>sns.despine()</span>
-<span id="cb27-275"><a href="#cb27-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-276"><a href="#cb27-276" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-277"><a href="#cb27-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-262"><a href="#cb27-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-265"><a href="#cb27-265" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-266"><a href="#cb27-266" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating dual axis plot : firstly we need paris listing over time plot</span></span>
+<span id="cb27-267"><a href="#cb27-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-268"><a href="#cb27-268" aria-hidden="true" tabindex="-1"></a>paris_listing_over_time[<span class="st">"neighbourhood"</span>].plot(</span>
+<span id="cb27-269"><a href="#cb27-269" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">=</span><span class="st">"New Host"</span>,</span>
+<span id="cb27-270"><a href="#cb27-270" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">=</span><span class="st">"Year"</span>,</span>
+<span id="cb27-271"><a href="#cb27-271" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"New AirBnB Hosts in Paris Over Time"</span></span>
+<span id="cb27-272"><a href="#cb27-272" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-273"><a href="#cb27-273" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-274"><a href="#cb27-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-275"><a href="#cb27-275" aria-hidden="true" tabindex="-1"></a>sns.despine()</span>
+<span id="cb27-276"><a href="#cb27-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-277"><a href="#cb27-277" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-278"><a href="#cb27-278" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-281"><a href="#cb27-281" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-282"><a href="#cb27-282" aria-hidden="true" tabindex="-1"></a><span class="co"># secondly we need paris listing over time by average price plot</span></span>
-<span id="cb27-283"><a href="#cb27-283" aria-hidden="true" tabindex="-1"></a>paris_listing_over_time[<span class="st">"price"</span>].plot(</span>
-<span id="cb27-284"><a href="#cb27-284" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">=</span><span class="st">"Average Price"</span>,</span>
-<span id="cb27-285"><a href="#cb27-285" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">=</span><span class="st">"Year"</span>,</span>
-<span id="cb27-286"><a href="#cb27-286" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Average Price in Paris Over Time"</span></span>
-<span id="cb27-287"><a href="#cb27-287" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb27-288"><a href="#cb27-288" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-289"><a href="#cb27-289" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-290"><a href="#cb27-290" aria-hidden="true" tabindex="-1"></a>sns.despine()</span>
-<span id="cb27-291"><a href="#cb27-291" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-292"><a href="#cb27-292" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-293"><a href="#cb27-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-279"><a href="#cb27-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-282"><a href="#cb27-282" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-283"><a href="#cb27-283" aria-hidden="true" tabindex="-1"></a><span class="co"># secondly we need paris listing over time by average price plot</span></span>
+<span id="cb27-284"><a href="#cb27-284" aria-hidden="true" tabindex="-1"></a>paris_listing_over_time[<span class="st">"price"</span>].plot(</span>
+<span id="cb27-285"><a href="#cb27-285" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">=</span><span class="st">"Average Price"</span>,</span>
+<span id="cb27-286"><a href="#cb27-286" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">=</span><span class="st">"Year"</span>,</span>
+<span id="cb27-287"><a href="#cb27-287" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Average Price in Paris Over Time"</span></span>
+<span id="cb27-288"><a href="#cb27-288" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-289"><a href="#cb27-289" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-290"><a href="#cb27-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-291"><a href="#cb27-291" aria-hidden="true" tabindex="-1"></a>sns.despine()</span>
+<span id="cb27-292"><a href="#cb27-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-293"><a href="#cb27-293" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-294"><a href="#cb27-294" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-295"><a href="#cb27-295" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-298"><a href="#cb27-298" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb27-299"><a href="#cb27-299" aria-hidden="true" tabindex="-1"></a><span class="co"># combining both plots together via the twinx() method from matplolib:</span></span>
-<span id="cb27-300"><a href="#cb27-300" aria-hidden="true" tabindex="-1"></a>fig,  ax <span class="op">=</span> plt.subplots()</span>
-<span id="cb27-301"><a href="#cb27-301" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-302"><a href="#cb27-302" aria-hidden="true" tabindex="-1"></a>ax.plot(paris_listing_over_time.index, </span>
-<span id="cb27-303"><a href="#cb27-303" aria-hidden="true" tabindex="-1"></a>     paris_listing_over_time[<span class="st">"neighbourhood"</span>], </span>
-<span id="cb27-304"><a href="#cb27-304" aria-hidden="true" tabindex="-1"></a>     label <span class="op">=</span> <span class="st">"New Hosts"</span>, </span>
-<span id="cb27-305"><a href="#cb27-305" aria-hidden="true" tabindex="-1"></a>     c <span class="op">=</span><span class="st">"red"</span></span>
-<span id="cb27-306"><a href="#cb27-306" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-307"><a href="#cb27-307" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-308"><a href="#cb27-308" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"New Hosts"</span>)</span>
-<span id="cb27-309"><a href="#cb27-309" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">"upper right"</span>)</span>
-<span id="cb27-310"><a href="#cb27-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-296"><a href="#cb27-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-299"><a href="#cb27-299" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb27-300"><a href="#cb27-300" aria-hidden="true" tabindex="-1"></a><span class="co"># combining both plots together via the twinx() method from matplolib:</span></span>
+<span id="cb27-301"><a href="#cb27-301" aria-hidden="true" tabindex="-1"></a>fig,  ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb27-302"><a href="#cb27-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-303"><a href="#cb27-303" aria-hidden="true" tabindex="-1"></a>ax.plot(paris_listing_over_time.index, </span>
+<span id="cb27-304"><a href="#cb27-304" aria-hidden="true" tabindex="-1"></a>     paris_listing_over_time[<span class="st">"neighbourhood"</span>], </span>
+<span id="cb27-305"><a href="#cb27-305" aria-hidden="true" tabindex="-1"></a>     label <span class="op">=</span> <span class="st">"New Hosts"</span>, </span>
+<span id="cb27-306"><a href="#cb27-306" aria-hidden="true" tabindex="-1"></a>     c <span class="op">=</span><span class="st">"red"</span></span>
+<span id="cb27-307"><a href="#cb27-307" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-308"><a href="#cb27-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-309"><a href="#cb27-309" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"New Hosts"</span>)</span>
+<span id="cb27-310"><a href="#cb27-310" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">"upper right"</span>)</span>
 <span id="cb27-311"><a href="#cb27-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-312"><a href="#cb27-312" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> ax.twinx()</span>
-<span id="cb27-313"><a href="#cb27-313" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-314"><a href="#cb27-314" aria-hidden="true" tabindex="-1"></a>ax2.plot(paris_listing_over_time.index, </span>
-<span id="cb27-315"><a href="#cb27-315" aria-hidden="true" tabindex="-1"></a>    paris_listing_over_time[<span class="st">"price"</span>], </span>
-<span id="cb27-316"><a href="#cb27-316" aria-hidden="true" tabindex="-1"></a>    label <span class="op">=</span> <span class="st">"Average Price Over Time"</span>, </span>
-<span id="cb27-317"><a href="#cb27-317" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span><span class="st">"blue"</span></span>
-<span id="cb27-318"><a href="#cb27-318" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb27-319"><a href="#cb27-319" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-320"><a href="#cb27-320" aria-hidden="true" tabindex="-1"></a>ax2.set_ylim(<span class="dv">0</span>)</span>
-<span id="cb27-321"><a href="#cb27-321" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-322"><a href="#cb27-322" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">"Average Price Over Time"</span>)</span>
-<span id="cb27-323"><a href="#cb27-323" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"2015 Regulations Led to Fewer Host &amp; Higher Prices"</span>)</span>
-<span id="cb27-324"><a href="#cb27-324" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">"lower center"</span>)</span>
-<span id="cb27-325"><a href="#cb27-325" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-326"><a href="#cb27-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-312"><a href="#cb27-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-313"><a href="#cb27-313" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> ax.twinx()</span>
+<span id="cb27-314"><a href="#cb27-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-315"><a href="#cb27-315" aria-hidden="true" tabindex="-1"></a>ax2.plot(paris_listing_over_time.index, </span>
+<span id="cb27-316"><a href="#cb27-316" aria-hidden="true" tabindex="-1"></a>    paris_listing_over_time[<span class="st">"price"</span>], </span>
+<span id="cb27-317"><a href="#cb27-317" aria-hidden="true" tabindex="-1"></a>    label <span class="op">=</span> <span class="st">"Average Price Over Time"</span>, </span>
+<span id="cb27-318"><a href="#cb27-318" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span><span class="st">"blue"</span></span>
+<span id="cb27-319"><a href="#cb27-319" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb27-320"><a href="#cb27-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-321"><a href="#cb27-321" aria-hidden="true" tabindex="-1"></a>ax2.set_ylim(<span class="dv">0</span>)</span>
+<span id="cb27-322"><a href="#cb27-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-323"><a href="#cb27-323" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">"Average Price Over Time"</span>)</span>
+<span id="cb27-324"><a href="#cb27-324" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"2015 Regulations Led to Fewer Host &amp; Higher Prices"</span>)</span>
+<span id="cb27-325"><a href="#cb27-325" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">"lower center"</span>)</span>
+<span id="cb27-326"><a href="#cb27-326" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-327"><a href="#cb27-327" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-328"><a href="#cb27-328" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-329"><a href="#cb27-329" aria-hidden="true" tabindex="-1"></a></span>
@@ -2043,21 +2044,22 @@ if (outputEl) {{
 <span id="cb27-331"><a href="#cb27-331" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-332"><a href="#cb27-332" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-333"><a href="#cb27-333" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-334"><a href="#cb27-334" aria-hidden="true" tabindex="-1"></a><span class="fu">## Summary of findings:</span></span>
-<span id="cb27-335"><a href="#cb27-335" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-336"><a href="#cb27-336" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>2015 Regulations  affected the number of  of AirBnB listings , this led to drop in numbers of people listing their accommodations. The result effect of this was steady rises in prices of accommodations listed. </span>
-<span id="cb27-337"><a href="#cb27-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-334"><a href="#cb27-334" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-335"><a href="#cb27-335" aria-hidden="true" tabindex="-1"></a><span class="fu">## Summary of findings:</span></span>
+<span id="cb27-336"><a href="#cb27-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-337"><a href="#cb27-337" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>2015 Regulations  affected the number of  of AirBnB listings , this led to drop in numbers of people listing their accommodations. The result effect of this was steady rises in prices of accommodations listed. </span>
 <span id="cb27-338"><a href="#cb27-338" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-339"><a href="#cb27-339" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-340"><a href="#cb27-340" aria-hidden="true" tabindex="-1"></a><span class="fu">## Recommendations:</span></span>
-<span id="cb27-341"><a href="#cb27-341" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-342"><a href="#cb27-342" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Over-regulations stiffles growth, causes sharp drop in numbers of people willingly to list their accommodation for AirBnB, there is need for government/appropriate authorities to review existing regulations, lessen strictness which will in turn incentivize people to list or put their accommodations for AirBnB. </span>
-<span id="cb27-343"><a href="#cb27-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-340"><a href="#cb27-340" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-341"><a href="#cb27-341" aria-hidden="true" tabindex="-1"></a><span class="fu">## Recommendations:</span></span>
+<span id="cb27-342"><a href="#cb27-342" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-343"><a href="#cb27-343" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Over-regulations stiffles growth, causes sharp drop in numbers of people willingly to list their accommodation for AirBnB, there is need for government/appropriate authorities to review existing regulations, lessen strictness which will in turn incentivize people to list or put their accommodations for AirBnB. </span>
 <span id="cb27-344"><a href="#cb27-344" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-345"><a href="#cb27-345" aria-hidden="true" tabindex="-1"></a><span class="fu">## Original Datasets: </span></span>
-<span id="cb27-346"><a href="#cb27-346" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-347"><a href="#cb27-347" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">The original AirBnB datasets can be accessed on Maven Data Playground here:</span><span class="co">](https://mavenanalytics.io/data-playground/airbnb-listings-reviews)</span>{target="_blank"}</span>
-<span id="cb27-348"><a href="#cb27-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-345"><a href="#cb27-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-346"><a href="#cb27-346" aria-hidden="true" tabindex="-1"></a><span class="fu">## Original Datasets: </span></span>
+<span id="cb27-347"><a href="#cb27-347" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-348"><a href="#cb27-348" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">The original AirBnB datasets can be accessed on Maven Data Playground here:</span><span class="co">](https://mavenanalytics.io/data-playground/airbnb-listings-reviews)</span>{target="_blank"}</span>
+<span id="cb27-349"><a href="#cb27-349" aria-hidden="true" tabindex="-1"></a></span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

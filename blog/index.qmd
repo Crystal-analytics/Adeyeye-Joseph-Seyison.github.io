@@ -2,5 +2,11 @@
 title: Blog
 listing: 
     contents: /
-    type: grid
+    type: default
+    categories: true
+    sort-ui: false
+    filter-ui: false
+page-layout: full
+title-block-banner: true
 ---
+

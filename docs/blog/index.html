@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -131,14 +131,13 @@ window.Quarto = {
 </script>
 
 <meta property="og:title" content="Blog – Home">
-<meta property="og:image" content="../blog/AirBnB-Analysis/air.jpg">
 <meta property="og:site_name" content="Home">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -197,109 +196,150 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Blog</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="QWNjb21tb2RhdGlvbg==">Accommodation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXR0cml0aW9u">Attrition <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QnVzaW5lc3M=">Business <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q2F0ZWdvcmljYWxEYXRh">CategoricalData <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2h1cm4=">Churn <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29ob3J0cw==">cohorts <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGVvcGxl">People <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVudGFscw==">Rentals <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWV0eQ==">Society <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3VydmV5cw==">Surveys <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VVNB">USA <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Blog</h1>
+
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="QnVzaW5lc3MlMkNSZW50YWxzJTJDQWNjb21tb2RhdGlvbg==" data-listing-date-sort="1775430000000" data-listing-file-modified-sort="1780656512330" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="714">
+<div class="thumbnail"><a href="../blog/AirBnB-Analysis/index.html" class="no-external">
+
+<p class="card-img-top"><img src="AirBnB-Analysis\air.jpg"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blog/AirBnB-Analysis/index.html" class="no-external">AirBnB Listing Analysis</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVzaW5lc3M='); return false;">Business</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVudGFscw=='); return false;">Rentals</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWNjb21tb2RhdGlvbg=='); return false;">Accommodation</div>
+
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="QnVzaW5lc3MlMkNSZW50YWxzJTJDQWNjb21tb2RhdGlvbg==" data-listing-date-sort="1775430000000" data-listing-file-modified-sort="1780587107154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="713">
-<a href="../blog/AirBnB-Analysis/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../blog/AirBnB-Analysis/air.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-AirBnB Listing Analysis
-</h5>
-<div class="card-text listing-description delink">
-<p>An Analysis of Airbnb data for over 250k listings in 10 major cities, including information about hosts, pricing, location, and room type, along with over 5 million…</p>
+<div class="delink listing-description"><a href="../blog/AirBnB-Analysis/index.html" class="no-external">
+<p>An Analysis of Airbnb data for over 250k listings in 10 major cities, including information about hosts, pricing, location, and room type, along with over 5 million historical reviews (targeting city of Paris only)</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Adeyeye Seyi Joseph
-</div>
+<div class="metadata">
+<a href="../blog/AirBnB-Analysis/index.html" class="no-external">
 <div class="listing-date">
 Apr 6, 2026
 </div>
+<div class="listing-author">
+Adeyeye Seyi Joseph
+</div>
+</a>
 </div>
 </div>
-</div></a>
+<div class="quarto-post image-right" data-index="1" data-categories="QnVzaW5lc3MlMkNjb2hvcnRzJTJDQ2h1cm4lMkNBdHRyaXRpb24=" data-listing-date-sort="1775430000000" data-listing-file-modified-sort="1780656493140" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
+<div class="thumbnail"><a href="../blog/Cohorts-Analysis/index.html" class="no-external">
+
+<p class="card-img-top"><img src="Cohorts-Analysis\churn.jpg"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blog/Cohorts-Analysis/index.html" class="no-external">Cohorts Analysis</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVzaW5lc3M='); return false;">Business</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29ob3J0cw=='); return false;">cohorts</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2h1cm4='); return false;">Churn</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXR0cml0aW9u'); return false;">Attrition</div>
+
 </div>
-<div class="g-col-1" data-index="1" data-categories="QnVzaW5lc3MlMkNjb2hvcnRzJTJDQ2h1cm4lMkNBdHRyaXRpb24=" data-listing-date-sort="1775430000000" data-listing-file-modified-sort="1780583358884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
-<a href="../blog/Cohorts-Analysis/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../blog/Cohorts-Analysis/churn.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Cohorts Analysis
-</h5>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../blog/Cohorts-Analysis/index.html" class="no-external">
 <p>A Cohort(churn) Analysis of UCI Irvine Machine Learning Repo Data (Online Retail)</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Adeyeye Seyi Joseph
-</div>
+<div class="metadata">
+<a href="../blog/Cohorts-Analysis/index.html" class="no-external">
 <div class="listing-date">
 Apr 6, 2026
 </div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="UGVvcGxlJTJDU3VydmV5cyUyQ1NvY2lldHklMkNVU0ElMkNDYXRlZ29yaWNhbERhdGElMkNQeXRob24=" data-listing-date-sort="1775430000000" data-listing-file-modified-sort="1780583371649" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1592">
-<a href="../blog/GSS-Analysis/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../blog/GSS-Analysis/usa.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-General Social Survey Analysis
-</h5>
-<div class="card-text listing-description delink">
-<p>An Analysis of the General Social Survey (GSS) Data: the GSS is one of the most important monitors of American societial attitudes and behaviors over the last 50 years. It…</p>
-</div>
-<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Adeyeye Seyi Joseph
 </div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="UGVvcGxlJTJDU3VydmV5cyUyQ1NvY2lldHklMkNVU0ElMkNDYXRlZ29yaWNhbERhdGElMkNQeXRob24=" data-listing-date-sort="1775430000000" data-listing-file-modified-sort="1780656590733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1593">
+<div class="thumbnail"><a href="../blog/GSS-Analysis/index.html" class="no-external">
+
+<p class="card-img-top"><img src="GSS-Analysis\usa.jpg"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blog/GSS-Analysis/index.html" class="no-external">General Social Survey Analysis</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGVvcGxl'); return false;">People</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3VydmV5cw=='); return false;">Surveys</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U29jaWV0eQ=='); return false;">Society</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VVNB'); return false;">USA</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2F0ZWdvcmljYWxEYXRh'); return false;">CategoricalData</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+</div>
+<div class="delink listing-description"><a href="../blog/GSS-Analysis/index.html" class="no-external">
+<p>An Analysis of the General Social Survey (GSS) Data: the GSS is one of the most important monitors of American societial attitudes and behaviors over the last 50 years. It measures behaviours since 1972-current. This analysis only filtered for (1972-2014) period</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../blog/GSS-Analysis/index.html" class="no-external">
 <div class="listing-date">
 Apr 6, 2026
 </div>
+<div class="listing-author">
+Adeyeye Seyi Joseph
 </div>
+</a>
 </div>
-</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>

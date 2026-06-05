@@ -8,7 +8,6 @@ format:
 description: "A Cohort(churn) Analysis of UCI Irvine Machine Learning Repo Data (Online Retail)"
 author: "Adeyeye Seyi Joseph"
 date: "04/06/2026"
-image: "churn.jpg"
 categories:
   - Business
   - cohorts
@@ -18,6 +17,7 @@ categories:
 ---
 
 
+![](churn.jpg){width="640" height="427"}
 
 
 ```{python}

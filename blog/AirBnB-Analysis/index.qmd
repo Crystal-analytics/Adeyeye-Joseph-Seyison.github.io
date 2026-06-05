@@ -8,13 +8,14 @@ format:
 description: "An Analysis of Airbnb data for over 250k listings in 10 major cities, including information about hosts, pricing, location, and room type, along with over 5 million historical reviews (targeting city of Paris only)"
 author: "Adeyeye Seyi Joseph"
 date: "04/06/2026"
-image: "air.jpg"
 categories:
   - Business
   - Rentals
   - Accommodation
 ---
 
+
+![](air.jpg){width="640" height="427"}
 
 
 ```{python}
