@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-58c40782552cbb48456a8f0091731ef7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f229afd682396d918fdaa44098f8fd2f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -98,25 +98,20 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html"> <i class="bi bi-megaphone" role="img">
-</i> 
-<span class="menu-text">Talks</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./blog/index.html"> 
-<span class="menu-text">Projects</span></a>
+<span class="menu-text">Python-projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./BI-projects.html"> 
-<span class="menu-text">Power-BI</span></a>
+    <a class="nav-link" href="./BI/index.html"> 
+<span class="menu-text">BI-projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./Excel-projects.html"> 
-<span class="menu-text">Excel-works</span></a>
+<span class="menu-text">Excel-projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./Mini-Analysis.html"> 
-<span class="menu-text">Jupyter-Notebooks</span></a>
+<span class="menu-text">Jupyter-projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./Python-Apps.html" aria-current="page"> 
@@ -125,6 +120,11 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./Research.html"> 
 <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./talks.html"> <i class="bi bi-megaphone" role="img">
+</i> 
+<span class="menu-text">Talks</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -239,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/adeyeye-seyi\.quarto\.pub\/home");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

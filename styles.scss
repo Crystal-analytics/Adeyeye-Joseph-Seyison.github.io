@@ -3,19 +3,20 @@
 // Sass Variables
 // https://quarto.org/docs/output-formats/html-themes.html#sass-variables
 
+// $theme-lightwhite:white;
 /*The below is called creating/using custom/colour-palette in css */
 
 
-$theme-lightgreen:#ffffff;
-$theme-green:darkgreen;
 $theme-black:black;
+$theme-white:white;
+$theme-blue:blue;
 
 
 
 /* Colors */
-$body-bg: $theme-lightgreen;
-$body-color: $theme-green;
-$link-color: $theme-black;
+$body-bg: $theme-black;
+$body-color: $theme-white;
+$link-color: $theme-blue;
 
 /* Fonts */
 $font-family-sans-serif: "Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -23,7 +24,7 @@ $font-size-root: 17px;
 
 h1, h2 , h3, h4, h5, h6 {
     text-transform: uppercase;
-    color: $theme-lightgreen;
+    color: $theme-white;
 }
 
 .navbar * {
@@ -35,7 +36,7 @@ span.navbar-title {
   transition-duration: 0.5s;  
 
 &:hover {
-    color: lighten($theme-green, 10%);
+    color: lighten($theme-white, 10%);
     transition-duration: 0.5s;
 }}
 

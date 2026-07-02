@@ -13,21 +13,21 @@ website:
       - text: Home
         href: index.qmd
     right: 
-      - href: talks.qmd
-        text: Talks
-        icon: megaphone
       - href: blog/index.qmd
-        text: Projects
-      - href: BI-projects.qmd
-        text: Power-BI
+        text: Python-projects
+      - href: BI/index.qmd
+        text: BI-projects
       - href: Excel-projects.qmd
-        text: Excel-works
+        text: Excel-projects
       - href: Mini-Analysis.qmd
-        text: Jupyter-Notebooks
+        text: Jupyter-projects
       - href: Python-Apps.qmd
         text: Python-apps
       - href: Research.qmd
         text: Research
+      - href: talks.qmd
+        text: Talks
+        icon: megaphone
     tools: 
     - icon: github
       href: https://github.com/Crystal-analytics
@@ -40,5 +40,5 @@ format:
   html:
     mainfont: "sarif"
     fontsize: 20px
-    theme: [cosmos, styles.scss]
+    theme: [darkly, styles.scss]
 

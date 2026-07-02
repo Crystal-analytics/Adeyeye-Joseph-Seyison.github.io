@@ -19,8 +19,39 @@ Adeyeye Seyi Joseph is a data analyst, public administrator, lover of beautiful 
 
 ## Education
 
-University of Ilorin, Ilorin | Kwara State | Nigeria
+University of Ilorin, Ilorin \| Kwara State \| Nigeria
 
 ## Experience
 
-Policy Innovation Centre(PIC) \| Data Analyst \| Dec 2025 - Feb 2026
+Policy Innovation Centre(PIC) \| Data Analyst \| 
+
+
+## Tools Stack
+
+-   Microsoft Excel
+
+-   Microsoft Power BI
+
+-   SQL
+
+-   R
+
+-   Python
+
+
+
+
+## Domains & Interests
+
+-   Sales & Finance Analytics(Business Intelligence)
+
+-   Health Analytics
+
+-   Humanitarian Data Analytics
+
+-   Operations & Supply-chain Analytics
+
+-   Academic & Corporate Research
+
+
+
